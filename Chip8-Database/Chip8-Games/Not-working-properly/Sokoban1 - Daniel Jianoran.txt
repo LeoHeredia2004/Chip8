@@ -1,0 +1,17 @@
+
+Sokoban1 - by Daniel Jianoran (2018)
+------------------------------------
+
+Push the boxes into the "+" position.
+
+
+Control (hexpad):
+-----------------
+5 to go UP
+7 to go LEFT
+8 to go DOWN
+9 to go RIGHT
+
+
+
+Manual made by Sly DC.

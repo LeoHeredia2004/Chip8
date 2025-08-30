@@ -1,0 +1,19 @@
+
+Br8kout - by SharpenedSpoon (2014)
+----------------------------------
+Octo-Jam 1
+
+
+You can't even imagine how amazing this breakout clone is!
+
+WONDER as you watch a ball bounce back and forth
+
+AMAZE at the pixel perfect collision detection
+
+DIE when your ball reaches the bottom of the screen
+
+LAUGH when you inevitably discover bugs in the game
+
+MOVE your paddle with "7" and "9"
+
+

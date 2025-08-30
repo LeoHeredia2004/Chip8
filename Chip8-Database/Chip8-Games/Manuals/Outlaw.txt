@@ -1,0 +1,12 @@
+
+Outlaw - by John Earnest (2014)
+-------------------------------
+
+An adaptation of the Atari 2600 game "Outlaw" for the Chip8.
+
+
+Controls:
+---------
+Move with 5/7/8/9 and fire with 6.
+Holding a direction while firing will
+fire an angled shot, which ricochets.

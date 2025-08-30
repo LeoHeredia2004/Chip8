@@ -1,0 +1,23 @@
+One day, the Octos were all busy partying, making and playing games for decades-old computers that 
+can barely run them. But when the squids came and saw how much fun the octos were having, they grew 
+jealous, and kidnapped the Octo Princess! Now a brave octo must find the sacred artifacts from the 
+World Above, venture to Castle Daiouika, and defeat the Daiouika Wizard in order to save the Octo 
+Princess! Will that brave octo be you?
+
+
+Controls (Keyboard):
+--------------------
+[On mobile, tap the screen to bring up the VIP keypad]
+
+WASD/Arrow keys [5789]: Move North, West, South, and East respectively.
+
+Q [4]: Skip turn.
+
+1: Attack (You will be asked to input a direction)!
+
+3: Cancel attack. 
+
+Press E [6] to start the game. 
+
+
+Inspired by Ultima by Lord British. Created for Octojam 8 using Octo.

@@ -1,9 +1,12 @@
-const UPSCALE: usize = 10; // Fator de upscale para 640x320
+const UPSCALE: usize = 10;
 use minifb::{Key, Window, WindowOptions};
-
 use rand::Rng;
 use std::fs::File;
 use std::io::Read;
+use std::time::{Duration, Instant};
+use std::thread;
+use rodio::{OutputStream, Sink, source::{SineWave, Source}};
+
 
 const FONT_SET: [u8; 80] = [
     0xF0, 0x90, 0x90, 0x90, 0xF0, // 0
@@ -22,6 +25,26 @@ const FONT_SET: [u8; 80] = [
     0xE0, 0x90, 0x90, 0x90, 0xE0, // D
     0xF0, 0x80, 0xF0, 0x80, 0xF0, // E
     0xF0, 0x80, 0xF0, 0x80, 0x80, // F
+];
+
+//BIG FONT SET PARA AS FONTES MAIORES DO XO-CHIP
+const BIG_FONT_SET: [u8; 160] = [
+    0x3C, 0x7E, 0xC3, 0xC3, 0xC3, 0xC3, 0xC3, 0xC3, 0x7E, 0x3C, // 0
+    0x18, 0x38, 0x58, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x3C, // 1
+    0x3E, 0x7F, 0xC3, 0x06, 0x0C, 0x18, 0x30, 0x60, 0xFF, 0xFF, // 2
+    0x3C, 0x7E, 0xC3, 0x03, 0x0E, 0x0E, 0x03, 0xC3, 0x7E, 0x3C, // 3
+    0x06, 0x0E, 0x1E, 0x36, 0x66, 0xC6, 0xFF, 0xFF, 0x06, 0x06, // 4
+    0xFF, 0xFF, 0xC0, 0xC0, 0xFC, 0xFE, 0x03, 0xC3, 0x7E, 0x3C, // 5
+    0x3E, 0x7C, 0xC0, 0xC0, 0xFC, 0xFE, 0xC3, 0xC3, 0x7E, 0x3C, // 6
+    0xFF, 0xFF, 0x03, 0x06, 0x0C, 0x18, 0x30, 0x30, 0x30, 0x30, // 7
+    0x3C, 0x7E, 0xC3, 0xC3, 0x7E, 0x7E, 0xC3, 0xC3, 0x7E, 0x3C, // 8
+    0x3C, 0x7E, 0xC3, 0xC3, 0x7F, 0x3F, 0x03, 0x03, 0x3E, 0x7C, // 9
+    0x7E, 0xFF, 0xC3, 0xC3, 0xC3, 0xFF, 0xFF, 0xC3, 0xC3, 0xC3, // A
+    0xFC, 0xFE, 0xC3, 0xC3, 0xFC, 0xFE, 0xC3, 0xC3, 0xFE, 0xFC, // B
+    0x3E, 0x7C, 0xC0, 0xC0, 0xC0, 0xC0, 0xC0, 0xC0, 0x7C, 0x3E, // C
+    0xF8, 0xFC, 0xCE, 0xC6, 0xC6, 0xC6, 0xC6, 0xCE, 0xFC, 0xF8, // D
+    0xFF, 0xFF, 0xC0, 0xC0, 0xF8, 0xF8, 0xC0, 0xC0, 0xFF, 0xFF, // E
+    0xFF, 0xFF, 0xC0, 0xC0, 0xF8, 0xF8, 0xC0, 0xC0, 0xC0, 0xC0  // F
 ];
 
 const KEY_MAP: [minifb::Key; 16] = [
@@ -44,13 +67,13 @@ const KEY_MAP: [minifb::Key; 16] = [
 ];
 
 const MEMORY_SIZE: usize = 4096;
-const SCREEN_WIDTH: usize = 64;
-const SCREEN_HEIGHT: usize = 32;
 const N_REGISTERS: usize = 16;
 const KEYPAD_SIZE: usize = 16;
 const STACK_SIZE: usize = 16;
 
 pub struct Chip8 {
+    screen_width: usize,
+    screen_height: usize,
     //Memory
     memory: [u8; MEMORY_SIZE],
     
@@ -64,7 +87,7 @@ pub struct Chip8 {
     stack_pointer: u16,
 
     //Display
-    display: [[u8; SCREEN_WIDTH]; SCREEN_HEIGHT],
+    display: [[u8; 128]; 64],
 
     //Keypad
     keypad: [bool;KEYPAD_SIZE],
@@ -73,26 +96,38 @@ pub struct Chip8 {
 
     dt: u8,
     st: u8,
+
+    high_res_mode: bool,
+
+    is_running: bool,
 }
 
 impl Chip8 {
     pub fn new() -> Self{
         let mut chip8 = Chip8{
+            screen_width: 64,
+            screen_height: 32,
             memory: [0; MEMORY_SIZE],
             registers_v: [0; N_REGISTERS],
             register_i: 0,
             pc: 0x200, //INCIA EM 0X200 POIS OA ANTERIORES SÃO RESERVADOS PARA O SISTEMA
             stack: [0; STACK_SIZE],
             stack_pointer: 0,
-            display: [[0; SCREEN_WIDTH]; SCREEN_HEIGHT],
+            display: [[0; 128]; 64],
             keypad: [false; KEYPAD_SIZE],
             draw_flag: false,
             dt: 0,
             st: 0,
+            high_res_mode: false,
+            is_running: true,
         };
 
         for i in 0..80{
             chip8.memory[i] = FONT_SET[i];
+        }
+
+        for i in 0..160{
+            chip8.memory[80 + i] = BIG_FONT_SET[i];
         }
 
         chip8
@@ -126,15 +161,101 @@ impl Chip8 {
                 self.registers_v[x] = rng.r#gen::<u8>() & nn;
                 self.pc += 2;
             }
-            //CLEAR SCREEN
-            0x00E0 => {
-                for y in 0..SCREEN_HEIGHT{
-                    for x in 0..SCREEN_WIDTH{
-                        self.display[y][x] = 0;
+            //SYSTEM INSTRUCTIONS
+            0x0000..=0x0FFF => {
+                match opcode & 0x00FF{
+                    //CLEAR SCREEN
+                    0xE0 => {
+                        for y in 0..self.screen_height{
+                            for x in 0..self.screen_width{
+                                self.display[y][x] = 0;
+                            }
+                        }
+
+                        self.pc += 2;
+                    }
+                    //RETURN
+                    0xEE => {
+                        if self.stack_pointer > 0 {
+                            self.stack_pointer -= 1;
+                            self.pc = self.stack[self.stack_pointer as usize];
+                            self.pc += 2;
+                        } else {
+                            println!("Stack underflow em RETURN! Ignorando retorno.");
+                            self.is_running = false;
+                        }
+                    }
+                    //ACTIVATE HIGH RESOLUTION MODE
+                    0xFF => {
+                        self.high_res_mode = true;
+                        self.screen_width = 128;
+                        self.screen_height = 64;
+                        self.pc += 2;
+                    }
+                    //DEACTIVATE HIGH RESOLUTION MODE
+                    0xFE => {
+                        self.high_res_mode = false;
+                        self.screen_width = 64;
+                        self.screen_height = 32;
+                        self.pc += 2;
+                    }
+                    //ROLL SCREEN DOWN
+                    0xC0..=0xCF => {
+                        let n = (opcode & 0x000F) as usize;
+                        
+                        for y in (n..self.screen_height).rev() {
+                            for x in 0..self.screen_width {
+                                self.display[y][x] = self.display[y - n][x];
+                            }
+                        }
+
+                        for y in 0..n {
+                            for x in 0..self.screen_width {
+                                self.display[y][x] = 0;
+                            }
+                        }
+
+                        self.draw_flag = true;
+                        self.pc += 2;
+                    }
+                    //ROLL SCREEN RIGHT
+                    0xFB => {
+                        for y in 0..self.screen_height {
+                            for x in (4..self.screen_width).rev(){
+                                self.display[y][x] = self.display[y][x - 4];
+                            }
+
+                            for x in 0..4{
+                                self.display[y][x] = 0;
+                            }
+                        }
+
+                        self.draw_flag = true;
+                        self.pc += 2;
+                    }
+                    //ROLL SCREEN LEFT
+                    0xFC => {
+                        for y in 0..self.screen_height {
+                            for x in (0..(self.screen_width - 4)){
+                                self.display[y][x] = self.display[y][x + 4];
+                            }
+
+                            for x in (self.screen_width - 4)..self.screen_width{
+                                self.display[y][x] = 0;
+                            }
+                        }
+
+                        self.draw_flag = true;
+                        self.pc += 2;
+                    }
+                    //EXIT
+                    0xFD => {
+                        self.is_running = false;
+                    }
+                    _ => {
+                        self.pc += 2;
                     }
                 }
-
-                self.pc += 2;
             }
             //JUMP INSTRUCTIONS
             0x1000..=0x1FFF => {
@@ -263,16 +384,16 @@ impl Chip8 {
             //JUMP
             0x2000..=0x2FFF => {
                 let adress = opcode & 0x0FFF;
-                self.stack[self.stack_pointer as usize] = self.pc;
-                self.stack_pointer += 1;
-                self.pc = adress;
+                if (self.stack_pointer as usize) < STACK_SIZE {
+                    self.stack[self.stack_pointer as usize] = self.pc;
+                    self.stack_pointer += 1;
+                    self.pc = adress;
+                } else {
+                    println!("Stack overflow em CALL! Ignorando chamada.");
+                    self.pc += 2;
+                }
             }
-            //RETURN
-            0x00EE => {
-                self.stack_pointer -= 1;
-                self.pc = self.stack[self.stack_pointer as usize];
-                self.pc += 2;
-            }
+            //DRAW
             0xD000..=0xDFFF => {
                 let x = self.registers_v[((opcode & 0x0F00) >> 8) as usize];
                 let y = self.registers_v[((opcode & 0x00F0) >> 4) as usize];
@@ -280,41 +401,109 @@ impl Chip8 {
 
                 let mut collision = false;
 
-                for row in 0..n{
-                    let sprite_byte = self.memory[(self.register_i+ row as u16) as usize];
+                if self.high_res_mode == false {
+                    for row in 0..n{
+                        let sprite_byte = self.memory[(self.register_i + row as u16) as usize];
 
-                    for col in 0..8{
-                        let sprite_pixel = (sprite_byte >> (7 - col)) & 0x01;
+                        for col in 0..8{
+                            let sprite_pixel = (sprite_byte >> (7 - col)) & 0x01;
 
-                        if sprite_pixel == 1 {
-                            let display_x = (x as usize + col) as usize % SCREEN_WIDTH;
-                            let display_y = (y as usize + row) as usize % SCREEN_HEIGHT;
-                            
-                            if self.display[display_y][display_x] == 1 {
-                                collision = true;
+                            if sprite_pixel == 1 {
+                                let display_x = (x as usize + col) as usize % self.screen_width;
+                                let display_y = (y as usize + row) as usize % self.screen_height;
+                                
+                                if self.display[display_y][display_x] == 1 {
+                                    collision = true;
+                                }
+                                
+                                self.display[display_y][display_x] ^= 1;
                             }
-                            
-                            self.display[display_y][display_x] ^= 1;
                         }
+
+
+                    }
+                }else{
+                    if n == 0{
+                        self.screen_width = 128;
+                        self.screen_height = 64;
+                        for row in 0..16{
+                        let sprite_byte1 = self.memory[(self.register_i + (row as u16) * 2) as usize];
+                        let sprite_byte2 = self.memory[(self.register_i + (row as u16) * 2 + 1) as usize];
+
+                        for col in 0..8{
+                            let sprite_pixel = (sprite_byte1 >> (7 - col)) & 0x01;
+
+                            if sprite_pixel == 1 {
+                                let display_x = (x as usize + col) as usize % self.screen_width;
+                                let display_y = (y as usize + row) as usize % self.screen_height;
+                                
+                                if self.display[display_y][display_x] == 1 {
+                                    collision = true;
+                                }
+                                
+                                self.display[display_y][display_x] ^= 1;
+                            }
+                        }
+
+
+                        for col in 0..8{
+                            let sprite_pixel = (sprite_byte2 >> (7 - col)) & 0x01;
+
+                            if sprite_pixel == 1 {
+                                let display_x = (x as usize + col + 8) as usize % self.screen_width;
+                                let display_y = (y as usize + row) as usize % self.screen_height;
+                                
+                                if self.display[display_y][display_x] == 1 {
+                                    collision = true;
+                                }
+                                
+                                self.display[display_y][display_x] ^= 1;
+                            }
+                        }
+
+                    }
+                    }else{
+                        self.screen_width = 128;
+                        self.screen_height = 64;
+                        for row in 0..n{
+                        let sprite_byte = self.memory[(self.register_i + row as u16) as usize];
+
+                        for col in 0..8{
+                            let sprite_pixel = (sprite_byte >> (7 - col)) & 0x01;
+
+                            if sprite_pixel == 1 {
+                                let display_x = (x as usize + col) as usize % self.screen_width;
+                                let display_y = (y as usize + row) as usize % self.screen_height;
+                                
+                                if self.display[display_y][display_x] == 1 {
+                                    collision = true;
+                                }
+                                
+                                self.display[display_y][display_x] ^= 1;
+                            }
+                        }
+
+
+                    }
                     }
 
-
                 }
+
                 self.registers_v[0xF] = if collision { 1 } else { 0 };
                 self.draw_flag = true;
                 self.pc += 2;
             }
             //JUMP IF PRESSED
-            0xE09E => {
+            _ if (opcode & 0xF0FF) == 0xE09E => {
                 let x = ((opcode & 0x0F00) >> 8) as usize;
-                if self.keypad[self.registers_v[x] as usize]{
+                if self.keypad[self.registers_v[x] as usize] {
                     self.pc += 4;
-                }else {
+                } else {
                     self.pc += 2;
                 }
             }
             //JUMP IF NOT PRESSED
-            0xE0A1 => {
+            _ if (opcode & 0xF0FF) == 0xE0A1 => {
                 let x = ((opcode & 0x0F00) >> 8) as usize;
                 if !self.keypad[self.registers_v[x] as usize]{
                     self.pc += 4;
@@ -341,31 +530,37 @@ impl Chip8 {
                     self.pc += 2;
                 }
             }
+            //SET DT
             _ if (opcode & 0xF0FF) == 0xF015 => {
                 let x = ((opcode & 0x0F00) >> 8) as usize;
                 self.dt = self.registers_v[x];
                 self.pc += 2;
             }
+            //SET ST
             _ if (opcode & 0xF0FF) == 0xF018 => {
                 let x = ((opcode & 0x0F00) >> 8) as usize;
                 self.st = self.registers_v[x];
                 self.pc += 2;
             }
+            //SET VX = DT
             _ if (opcode & 0xF0FF) == 0xF007 => {
                 let x = ((opcode & 0x0F00) >> 8) as usize;
                 self.registers_v[x] = self.dt;
                 self.pc += 2;
             }
+            //ADD I + VX
             _ if (opcode & 0xF0FF) == 0xF01E => {
                 let x = ((opcode & 0x0F00) >> 8) as usize;
                 self.register_i = self.register_i.wrapping_add(self.registers_v[x] as u16);
                 self.pc += 2;
             }
+            //SET I = SPRITE(VX)
             _ if (opcode & 0xF0FF) == 0xF029 => {
                 let x = ((opcode & 0x0F00) >> 8) as usize;
                 self.register_i = (self.registers_v[x] as u16) * 5;
                 self.pc += 2;
             }
+            //STORE BCD
             _ if (opcode & 0xF0FF) == 0xF033 => {
                 let x = ((opcode & 0x0F00) >> 8) as usize;
                 let vx = self.registers_v[x];
@@ -374,6 +569,7 @@ impl Chip8 {
                 self.memory[self.register_i as usize + 2] = vx % 10;
                 self.pc += 2;
             }
+            //STORE REGISTERS
             _ if (opcode & 0xF0FF) == 0xF055 => {
                 let x = ((opcode & 0x0F00) >> 8) as usize;
                 for i in 0..=x {
@@ -381,6 +577,7 @@ impl Chip8 {
                 }
                 self.pc += 2;
             }
+            //LOAD REGISTERS
             _ if (opcode & 0xF0FF) == 0xF065 => {
                 let x = ((opcode & 0x0F00) >> 8) as usize;
                 for i in 0..=x {
@@ -388,8 +585,13 @@ impl Chip8 {
                 }
                 self.pc += 2;
             }
+            _ if (opcode & 0xF0FF) == 0xF030 => {
+                let x = ((opcode & 0x0F00) >> 8) as usize;
+                self.register_i = 80 + (self.registers_v[x] as u16) * 10;
+                self.pc +=2;
+            }
             _ => {
-                println!("Opcode não existe!");
+                println!("Opcode não existe!: {:04X}", opcode);
             }
         }
     }
@@ -397,11 +599,16 @@ impl Chip8 {
 }
 
 fn main() {
-    const CYCLES_PER_FRAME: u32 = 1;
     let mut chip8 =Chip8::new();
     let mut cycle_counter = 0;
 
-    let rom_path = "C:/Users/leohe/OneDrive/Documentos/chip8/chip8_emulator/roms/PONG2";
+    const CPU_SPEED_HZ: u64 = 500;
+    const TIMER_SPEED_HZ: u64 = 60;
+    const CYCLES_PER_FRAME: u64 = CPU_SPEED_HZ / TIMER_SPEED_HZ;
+
+    let frame_duration = Duration::from_millis(1000 / TIMER_SPEED_HZ);
+
+    let rom_path = "C:/Users/leohe/OneDrive/Documentos/chip8/chip8_emulator/Chip8-Database/Chip8-Games/Pong (1 player)(unknown author)(19xx).ch8";
 
     match File::open(rom_path){
         Ok(mut file) => {
@@ -418,14 +625,28 @@ fn main() {
 
     let mut window = Window::new(
         "Chip8 Emulator",
-        SCREEN_WIDTH * UPSCALE,
-        SCREEN_HEIGHT * UPSCALE,
+        chip8.screen_width * UPSCALE,
+        chip8.screen_height * UPSCALE,
         WindowOptions::default(),
     ).unwrap();
 
-    let mut buffer: Vec<u32> = vec![0; (SCREEN_WIDTH * UPSCALE) * (SCREEN_HEIGHT * UPSCALE)];
+    let mut buffer: Vec<u32> = vec![0; (chip8.screen_width * UPSCALE) * (chip8.screen_height * UPSCALE)];
 
-    while window.is_open() && !window.is_key_down(Key::Escape) {
+
+    let mut prev_width = chip8.screen_width;
+    let mut prev_height = chip8.screen_height;
+
+    let(_stream, stream_handle) = OutputStream::try_default().unwrap();
+    let sink = Sink::try_new(&stream_handle).unwrap();
+
+    let source = SineWave::new(440.0).take_duration(Duration::from_secs_f32(1.5)).amplify(0.20).repeat_infinite();
+
+    sink.append(source);
+    sink.pause();
+    
+    while window.is_open() && !window.is_key_down(Key::Escape) && chip8.is_running {
+        let frame_start = Instant::now();
+
         for i in 0..16 {
             if window.is_key_down(KEY_MAP[i]) {
                 chip8.keypad[i] = true;
@@ -438,31 +659,55 @@ fn main() {
             chip8.emulate_cycle();
         }
 
-        // Atualiza os timers uma vez por quadro (a 60Hz)
         if chip8.dt > 0 {
             chip8.dt -= 1;
         }
         if chip8.st > 0 {
+            sink.play();
             chip8.st -= 1;
+        }else{
+            sink.pause();
+        }
+
+        chip8.emulate_cycle();
+
+        if chip8.screen_width != prev_width || chip8.screen_height != prev_height {
+            window = Window::new(
+                "Chip8 Emulator",
+                chip8.screen_width * UPSCALE,
+                chip8.screen_height * UPSCALE,
+                WindowOptions::default(),
+            ).unwrap();
+            buffer = vec![0; (chip8.screen_width * UPSCALE) * (chip8.screen_height * UPSCALE)];
+            prev_width = chip8.screen_width;
+            prev_height = chip8.screen_height;
         }
 
         if chip8.draw_flag {
-            // upscale: cada pixel do CHIP-8 vira um bloco UPSCALE x UPSCALE
-            for y in 0..SCREEN_HEIGHT {
-                for x in 0..SCREEN_WIDTH {
+            for y in 0..chip8.screen_height {
+                for x in 0..chip8.screen_width {
                     let color = if chip8.display[y][x] == 1 { 0xFFFFFF } else { 0x0 };
                     for dy in 0..UPSCALE {
                         for dx in 0..UPSCALE {
                             let up_x = x * UPSCALE + dx;
                             let up_y = y * UPSCALE + dy;
-                            let index = up_x + up_y * (SCREEN_WIDTH * UPSCALE);
+                            let index = up_x + up_y * (chip8.screen_width * UPSCALE);
                             buffer[index] = color;
                         }
                     }
                 }
             }
-            window.update_with_buffer(&buffer, SCREEN_WIDTH * UPSCALE, SCREEN_HEIGHT * UPSCALE).unwrap();
+            window.update_with_buffer(&buffer, chip8.screen_width * UPSCALE, chip8.screen_height * UPSCALE).unwrap();
             chip8.draw_flag = false;
+        }else{
+            window.update();
         }
+
+        let elapsed = frame_start.elapsed();
+        if elapsed < frame_duration {
+            thread::sleep(frame_duration - elapsed);
+        }
+
+
     }
 }

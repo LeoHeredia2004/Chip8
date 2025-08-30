@@ -1,0 +1,9 @@
+Killer Robots is an adaptation of the TRS-80 game Robots. 
+
+The player is placed on a 8x8 grid and must avoid getting caught by two 
+killer robots. Force beams are positioned on the grid. The player can 
+see and try to avoid these, but the robots are oblivious to them and will 
+just run into them and get destroyed. Robots can also run into each other, 
+in which case one of the robots is destroyed. Once 20 robots have been 
+destroyed, the player wins, but if the player moves into a force beam or 
+is caught by a robot, the player loses.

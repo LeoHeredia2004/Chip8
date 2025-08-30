@@ -1,0 +1,18 @@
+
+Thom8s Was Alone - by jusion (2014)
+-----------------------------------
+
+Avoid spikes at all costs.
+
+
+Controls:
+---------
+5 = Jump
+7 = Left
+9 = Right
+
+
+
+
+Play online:
+https://johnearnest.github.io/Octo/index.html?gist=e526f976df887806f9d3

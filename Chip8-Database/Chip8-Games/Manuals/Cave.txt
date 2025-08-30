@@ -1,0 +1,8 @@
+
+Cave - by ??? (unknown author) (19xx)
+-------------------------------------
+
+Controls:
+---------
+Press "F" to start, then use "2", "4", "6", "8" to move through the 
+CAVE without hitting the walls.

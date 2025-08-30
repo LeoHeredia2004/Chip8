@@ -1,0 +1,1 @@
+A Snoopy picture, converted to CHIP-8.

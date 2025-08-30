@@ -1,0 +1,25 @@
+
+The Maze - by Ian Schert (2020)
+-------------------------------
+https://github.com/Schnert0/The-Maze
+
+
+Welcome to "The Maze"
+---------------------
+* explore a huge world! over 120 screens to traverse!
+* collect all 33 tokens hidden across the world!
+* go through collecting how you see fit
+
+can you escape "The Maze?"
+
+
+CONTROLS:
+---------
+
+Key 	Direction
+-----------------
+5 	UP
+7 	Left
+8 	Down
+9 	Right
+

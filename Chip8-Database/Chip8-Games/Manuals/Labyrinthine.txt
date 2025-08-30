@@ -1,0 +1,20 @@
+
+Labyrinthine
+============
+by TempVar Studios (octojam 7)
+
+
+About:
+------
+Welcome to the labyrinth!
+
+- explore a huge world! over 120 screens to traverse!
+- go through collecting how you see fit!
+
+Can you escape the labyrinth?
+
+
+
+Controls:
+---------
+5/7/8/9 = move

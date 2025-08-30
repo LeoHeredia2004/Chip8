@@ -1,0 +1,5 @@
+A top down maze game without walls. It's only a prototype I'm afraid so there is not much game.
+
+It's on an 8x8 looping grid.
+
+WASD to move around, E to interact

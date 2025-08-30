@@ -1,0 +1,20 @@
+
+Worm
+====
+by rstein (octojam 7)
+
+
+About:
+------
+I recently wrote a Chip-8 Interpreter and while researching i stumbled upon the Octojam and decided to 
+write a game for it. As i am really creative it is a snake clone. This is supposed to run without waiting 
+for vsync after every sprite draw (vblank option in octo), as my interpreter didn't do this when i wrote 
+the game.
+
+
+Controls:
+---------
+Movement is "5/7/8/9" and to start a new game press "6" at the end screen.
+
+
+

@@ -1,0 +1,16 @@
+
+Chicken Scratch
+===============
+by John Earnest (Octojam 7)
+
+
+About:
+------
+You're a chicken. You want to eat bugs. How fast can you get 'em?
+
+
+Controls:
+---------
+* Use "5/7/8/9" to run. Press and hold to dash, which is only slightly faster than running.
+* Press "6" to peck at bugs. (or dirt. or small rocks. you can peck at anything, really.)
+* Press "4" to use echolocation (an ability chickens have) to find distant bugs.

@@ -1,0 +1,28 @@
+
+Only the Good Die Neil Young
+============================
+by cishetkayfaber (Octojam 7)
+
+
+About:
+------
+The year is 197X, and the universe is under threat... a time-traveling shape-shifting, non-binary, and 
+incredibly sexy threat to be precise.
+
+Only one man.. Neil Young... can save us all.
+
+
+Controls:
+---------
+Use "4, 5, 6, 7, 8, and 9" keys on your hex keypad to gather the power of the 6 scions to multiply the power 
+of Neil until the 88 second ETA is up.
+
+
+Hints:
+------
+* Maximum power number of each scion increases along with the power of the other scions.
+* Try making a Super Scion...
+* While the power of all scions are necessary in order to help Neil... ultimately, they may not all be a force 
+  for good in the universe. Choose your scion power levels wisely.
+
+

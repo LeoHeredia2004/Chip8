@@ -1,0 +1,14 @@
+
+RPS - by System Logoff (2014)
+-----------------------------
+
+RPS is a basic Rock-Paper-Scissors game. Try and beat the computer and get a table breaking score!
+
+
+Controls:
+--------
+A - Rock
+0 - Paper
+B - Scissors
+
+Press any Octo-Key to move forward title/information screens.

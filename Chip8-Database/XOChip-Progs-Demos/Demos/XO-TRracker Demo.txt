@@ -1,0 +1,27 @@
+To show a bit extensive use of XO-CHIP new audio capability, as music driver, as well as an utility 
+to make ease of creating musics with 52 predefined samples, and 12 user definable samples.
+
+Interface control:
+
+    Press 4 for XO-Tracker main title
+    Press R for a simplistic Tracker Interface
+    Press F for synthesia view
+    Press V to reveal the song's cover image
+
+Song control:
+
+    Press 1 and 3 to switch song, 2 to pause/resume song
+    Press Q, A, to seek through song by frame. (Q page up, A page down)
+    Press Z, X, C, to control tickrate. (Z lower, C higher, X reset)
+
+There are two songs included in this demo, which would be used on "Tsukite The Bananafox" game. The 
+overworld theme is originally written for XO-Tracker, while the main theme was covered from:
+
+As a side note, this program took over 3584 bytes for main program codes. There's no editor in-program 
+implemented, hence the main focus here is the source code you can tinker with. Open this link on new window 
+and drag this cartridge to the new window page.
+
+The reason to use my fork of Octo is the piano keys in Tool Box > Audio Tools, which come in handy for this.
+
+When you done with everything, you can put the data to the clean version of the music driver here or to be 
+used on your own program.

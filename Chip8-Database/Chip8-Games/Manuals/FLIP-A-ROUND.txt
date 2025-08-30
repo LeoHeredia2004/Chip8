@@ -1,0 +1,9 @@
+FLIP-A-ROUND
+
+This game shows the numbers 1 through 9 in a random sequence.
+The object is to arrange them in order from left to right in
+the least number of tries. An example of how the program works
+is as follows; Suppose "271485396" is the starting sequence.
+Pressing key 5 will give you "841725396." Note that only the
+first five numbers "flip-a-round." After a few tries, you will
+begin to catch on.

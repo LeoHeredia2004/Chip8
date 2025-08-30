@@ -1,0 +1,15 @@
+
+Flight Runner - by TodPunk (2014)
+---------------------------------
+OctoJam 1
+
+
+A simple flight runner for the Chip8.
+
+
+Controls:
+---------
+"5" to go Up
+"6" to go Backward
+"7" to go Down
+"8" to go Forward

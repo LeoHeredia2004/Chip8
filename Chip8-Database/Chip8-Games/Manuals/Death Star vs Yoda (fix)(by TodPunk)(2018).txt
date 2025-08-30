@@ -1,0 +1,23 @@
+Changed JP @288 from. JP 298 to JP288 so the 'game' just loops when you hit the target instead of 
+crashing. Still other problems here as it doesn't initiate all registers so a startup with anything 
+else than 0 in RAM will not work same goes for a reset.
+
+
+
+
+Death Star vs Yoda - by TodPunk (2018)
+--------------------------------------
+No really, this is not a very compelling game. Made by groupthink of people that have no idea what 
+they're doing. Think 10,000 monkeys on typewriters.
+
+Death Star and Yoda copyright Somebody Else. Apologies to the Internet.
+
+
+Controls:
+---------
+WASD to move
+E to fire
+
+
+http://www.awfuljams.com/octojam-v/games/death-star-vs-yoda
+

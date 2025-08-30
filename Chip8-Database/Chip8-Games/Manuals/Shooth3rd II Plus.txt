@@ -1,0 +1,33 @@
+
+Shooth3rd II Plus - by Beholder (2018)
+--------------------------------------
+OctoJam 5
+
+
+Q/A - move player 1 up/down
+
+W/S - changes the player 1 angle up/down
+
+R/F - move player 2 up/down
+
+E/D - changes the player 2 angle up/down
+
+Z - starts the game (shoots both guns)
+
+X - Reset the game
+
+C - Changes the level layout
+
+Shooth3rd II + adds a few last minute changes:
+
+    Larger target and death square
+    If you hit the death square (bottom center) you die
+    Platform is now vertical and bocks both sides
+
+I tried using a lookup table for the death square and larger target. It's definitely slower, but adds some cool possibilities.
+
+I think this version is more fun to play. It's easier to hit the larger target. Before it would take quite some time. Plus, the addition of the death square allows both players to lose :) The vertical platform/barrier is way more interesting. It can block both target and death square.
+
+I do own an original Cosmac VIP and I plan to make a video of it running this game (just like I did with the original Shooth3rd). At the moment I don't have a monitor... so it might take a while.
+
+Cheers!

@@ -1,0 +1,31 @@
+
+Tetris - by 12me21 (2017)
+-------------------------
+OctoJam 4
+
+
+Controls:
+---------
+0-F : Select level (0-15) 
+4(q) : Move Left
+5(w) : Move Right
+D(r) : Rotate Clockwise
+7(a) : Fast Drop
+F(v) : Return to Title Screen (after loing)
+
+Note: Most keyboards cannot detect q+a+r being pressed all at once.
+
+
+Features:
+---------
+* Instant row checking (0.03 sec.)
+* Delay timer used for all timing
+* Next piece display
+* Different score depending on number of rows cleared (1, 2, 8, 30)
+* Level select (0-15)
+* Sound
+* Fast row clearing/dropping
+* Maximum score above 255 (9990)
+* Bytecode written by hand!! (Except at the very end I wrote an auto-addresser to make 
+  things easier... I feel like such a cheater...)
+

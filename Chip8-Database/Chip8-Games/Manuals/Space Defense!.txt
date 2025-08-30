@@ -1,0 +1,28 @@
+
+Space Defense! - by Jim South (2014)
+------------------------------------
+Iron Pencil Games
+
+
+Summary
+-------
+Defend your planet from alien invaders by blowing them to bits.
+Don’t let any ships get past you or it’s game over!
+
+
+Controls
+--------
+5 and 8 move up and down, press 6 to fire.
+
+
+Credits
+-------
+Created by Jim South, with special thanks to John Earnest.
+
+Contact Jim South (jim -at- ironpencil.com) with any questions or comments about the game.
+
+SPACE DEFENSE! was made using Octo, a CHIP-8 emulator designed by John Earnest.
+
+If you liked my game, please consider donating to or participating in Extra Life. It is a 24-hour gaming 
+marathon to raise money for Children’s Miracle Network hospitals.
+Go to www.extra-life.org for more information. Thank you.

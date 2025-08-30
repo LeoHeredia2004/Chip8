@@ -1,0 +1,35 @@
+
+Patrick's CHIP-8 Challenge - by Tobias V. Langhoff (2019)
+---------------------------------------------------------
+
+Remove all 28 squares from the board in a never-ending series of randomized puzzles.
+
+PATRICK’S CHIP-8 CHALLENGE is fun for all ages. Are you ready for the challenge?
+
+
+INSTRUCTIONS:
+-------------
+The object of the game is to move Patrick around the board and remove all 28 squares. 
+Squares with symbols on them will remove extra squares (as indicated by the symbols), 
+and can make the puzzles trickier, but also reduce the number of steps needed.
+
+
+CONTROLS:
+---------
+Patrick can move to any adjacent square, even diagonally. If you’re using an ASCII 
+keyboard rather than a COSMAC VIP hexadecimal keyboard, the following keys are used 
+for movement:
+
+Q W E
+A   D
+Z X C
+
+
+HISTORY:
+--------
+The original Patrick's Challenge was an unfinished text adventure for the Commodore 64, 
+created by Reldni Productions. In June of 1996, Patrick's Challenge for Windows 95 was 
+released. It was a puzzle game, and bore no resemblance to the original Commodore game. 
+In 1998, Troy Scott and Reldni released the sequel, Patrick's Challenge II, which this 
+fanmade game is a port of.
+

@@ -1,0 +1,11 @@
+
+Airplane - by ??? (Unknown Author) (19xx)
+-----------------------------------------
+
+You must drop packets from your airplane and make sure they hit the ground 
+without colliding with other planes.
+
+
+Control:
+--------
+8 = to drop packets

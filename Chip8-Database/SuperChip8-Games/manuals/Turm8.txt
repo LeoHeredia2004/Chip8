@@ -1,0 +1,24 @@
+
+Turm8
+=====
+by Tobias V. Langhoff (octojam 7)
+
+
+About:
+------
+This is a collection of cellular automata called "turmites", implemented in Octo for SUPER-CHIP on the 
+HP 48 graphing calculators.
+
+A "turmite" (also known as "TurNing machine") is a type of two-dimensional Turing machine. It consists 
+of an ant that moves over a grid of pixels. Depending on the current pixel's color (limited to two colors 
+in this implementation) and the ant's internal state, it can rotate, change its state, and/or change the 
+color of the pixel before moving. From these simple rules, interesting patterns and behaviors emerge.
+
+
+Controls:
+---------
+* "5/7/8/9" to move in menu.
+* "B" = Select
+* "F" and "E" = adjust speed
+* "A" = return to menu
+

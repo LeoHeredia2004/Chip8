@@ -1,0 +1,13 @@
+
+2048 - by Dr. Gergo Erdi (2014)
+-------------------------------
+
+This is an implementation of the 2048 game for the CHIP-8 virtual machine.
+
+
+Controls (hexpad):
+------------------
+2 to slide up
+8 to slide down
+4 to slide left
+6 to slide right

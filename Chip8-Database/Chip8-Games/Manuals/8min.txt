@@ -1,0 +1,14 @@
+
+8min
+====
+by TomR (Octojam 7)
+
+
+About:
+------
+Don't the let ball into your corner.
+
+
+Controls:
+---------
+Use "7" and "A" to control the left paddle, "E" and "B" to control the right paddle.

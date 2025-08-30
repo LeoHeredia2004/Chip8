@@ -1,0 +1,7 @@
+Simple Snek by John Earnest (2021)
+----------------------------------
+
+An extremely minimalist interpretation of the perennial classic, Snake.
+
+Use 2, 4, 6 & 8 for direction.
+Press any key to restart.

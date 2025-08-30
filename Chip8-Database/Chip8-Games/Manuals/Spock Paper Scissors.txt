@@ -1,0 +1,18 @@
+
+Spock Paper Scissors
+====================
+by f0ntz (Octojam 7)
+
+
+About:
+------
+Rock Paper Scissors Lizard Spock. Same game as in the sictom The Big Bang Theory.
+
+
+Controls:
+---------
+7 - Rock
+8 - Paper 
+9 - Scissors 
+A - Lizard 
+0 - Spock

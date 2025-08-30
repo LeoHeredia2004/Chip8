@@ -1,0 +1,14 @@
+
+Danm8ku - by buffis (2015)
+--------------------------
+
+Bullet hell for the Chip-8! 
+Survive 8 waves of exciting bullet patterns!
+
+
+Controls:
+---------
+5 = Up
+7 = Left
+8 = Down
+9 = Right

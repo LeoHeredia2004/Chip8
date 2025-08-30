@@ -1,0 +1,18 @@
+
+Fuse - by ??? (unknown author)(xxxx)
+------------------------------------
+
+A minimalist reinterpretation of the classic Pipe Dream.
+
+
+Assemble lines to guide a burning fuse. Don't let it burn out!
+You cannot lay down a line overlapping any existing lines.
+
+Controls:
+---------
+5 = Move Up current line fragments
+7 = Move Left current line fragments
+8 = Move Down current line fragments
+9 = Move Right current line fragments
+
+6 = to lay them down

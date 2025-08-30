@@ -1,0 +1,15 @@
+
+Tomb Ston Tipp - by TomR (2018)
+-------------------------------
+OctoJam 5
+
+
+Take turns pressing buttons to see who wins.
+
+This is a turn based game to see who can find the
+smile first. Each player presses a button in turn
+until the smile is shown. The player who pressed
+the button that found the smile wins. The game
+automatically resets for another round.
+
+This is the halloween version now. Smiles are zombies.

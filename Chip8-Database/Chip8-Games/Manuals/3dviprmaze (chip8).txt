@@ -1,0 +1,23 @@
+Let me be very clear and up front that I didn't really make this game this October, but 6 months ago. 
+But since this jam isn't really a competition, and more of a show-and-tell, I thought it would be fun 
+to submit this as a "follow up" on my project from last year.
+
+This game is an homage to the Sinclair ZX81 game 3D Monster Maze from 1981. That game was released just 
+three years after the specification for Chip-8 was published, so it's from around the same era. In honour 
+of the first computer that ran Chip-8, the Cosmac VIP, and its related magazine, the VIPer, I figured it 
+was time for a viper version of 3D Monster Maze, and so last year I created 3D Viper Maze for Octojam 7.
+
+The intention I had with 3D Viper Maze, although written using XO-Chip instructions to make it more fun 
+as a game, was always to create a version of the game that can run on the original Cosmac VIP Chip-8 
+interpreter. This simplified version became 3D VIP'r Maze, and that is what you're looking at.
+
+This version of the game runs at 30 cycles per frame, at the original resolution, in the space of 3.2K 
+of memory, using the original instruction set. It's a game with an endless supply of randomly generated 
+mazes, just like its namesake. The levels are generated in Chip-8, so you will have to be a little 
+patient ;) Unfortunately there wasn't enough space to add any vipers this time around.
+
+Your challenge, if you accept it: to find the exit in each maze! How far down the maze can you get?
+
+If you're interested in the challenges I had to overcome to make this game fit and run on the original 
+Cosmac VIP, check out my development notes on Github!
+

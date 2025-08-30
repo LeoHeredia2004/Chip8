@@ -1,0 +1,13 @@
+
+Jackpot - by Joyce Weisbecker (1978)
+------------------------------------
+Cosmac VIP CDP18S711 Book - Page 49 (VIP-311)
+
+
+This program uses the CHIP-8 INTERPRETER at 0000-01FF. You start with $10. 
+It costs you $1 each time you play. Push any key to start the 3 wheels 
+spinning. Push keys 1, 2, and 3 (one at a time) to stop the wheels. You win 
+$3 if you stop with 3 different symbols. You win $5 if you stop with 3 
+identical symbols. You get a $5 bonus for 3 solid squares. You break the 
+bank if you get your winnings up to $50. 
+

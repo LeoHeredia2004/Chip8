@@ -1,0 +1,10 @@
+
+Rule 30 Improved by verisimilitude (2019) 
+-----------------------------------------
+
+Demo pattern maker.
+
+2 = Up
+8 = Down
+5 = Draw a Dot
+F = Start pattern.

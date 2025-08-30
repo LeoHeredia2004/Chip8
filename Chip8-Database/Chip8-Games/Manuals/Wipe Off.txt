@@ -1,0 +1,12 @@
+
+Wipe Off - by Joseph Weisbecker (19xx)
+--------------------------------------
+Cosmac VIP CDP18S711 Book - Page 42 (VIP-311)
+
+
+This program uses the CHIP-8 INTERPRETER at 0000-01FF Serve the ball by 
+pressing any key. Move the paddle left or right by pressing key 4 or 6. 
+
+Try to wipe out as many spots as possible. Each spot counts one point. 
+You get 20 balls. You see your final score at the end of the game. You can 
+make the paddle wider by changing the E0 byte at 02CD to F8 or FF. 

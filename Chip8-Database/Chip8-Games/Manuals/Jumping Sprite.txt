@@ -1,0 +1,12 @@
+Game Rules:
+-----------
+The position of a large sprite is controlled by a random number generator.
+The large sprite moves to a different position every 5 seconds.
+The position of a smaller sprite is controlled by your keypad:
+    2=up
+    4=left
+    6=right
+    8=down
+
+Your task is to make the smaller sprite collide with the larger sprite using 
+the keys on your keypad. (aka a "Tag" game).

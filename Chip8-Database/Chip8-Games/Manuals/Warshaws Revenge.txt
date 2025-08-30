@@ -1,0 +1,24 @@
+
+Warshaws Revenge - by Ethan Pini (2019)
+---------------------------------------
+
+This fun shooter is the antithesis to the great crash of '83.
+A "Yar's Revenge" Atari 2600 game clone.
+
+
+Control (hexpad):
+-----------------
+5 = go UP  
+7 = go LEFT
+8 = go DOWN
+9 = go RIGHT
+B = Shoot
+
+
+
+Manual made by Sly DC.
+
+
+
+https://github.com/eth-p/uni-chip8/blob/master/module/chip-roms/warshaws_revenge.asm
+

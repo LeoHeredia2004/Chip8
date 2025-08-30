@@ -1,0 +1,33 @@
+
+LIGHTS OUT for CHIP-8
+    
+by Dion Williams
+
+===============================================================================
+
+Written in 2017 by Dion Williams
+
+To the extent possible under law, the author(s) 
+have dedicated all copyright
+and related and neighboring rights to this software 
+to the public domain
+worldwide. This software is distributed without any warranty.
+
+
+
+You should have received a copy of the CC0 Public Domain Dedication along with
+this 
+software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
+
+===============================================================================
+
+
+Keys 1-9 on a CHIP-8 hex keypad are used to control a 3x3 grid of lights.
+
+Pressing a key toggles that light and any horizontally/vertically adjacent
+ lights. 
+The game is won when all lights have been turned off.
+
+
+
+

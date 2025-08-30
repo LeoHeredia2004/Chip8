@@ -1,0 +1,14 @@
+
+Flappy Pong - by cnelmortimer (2017)
+------------------------------------
+OctoJam 4
+
+
+Flappy Pong is a Flappy Bird clone for Chip-8. Players win if they are able to obtain 
+255 points (a cup is painted then). This game was created to be shared with the Pin8 
+emulator.
+
+
+Controls:
+---------
+Press "5" to flap.

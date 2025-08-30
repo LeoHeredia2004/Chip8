@@ -1,0 +1,16 @@
+
+Acey-Ducey - by Phil Baltzer (1978)
+-----------------------------------
+ACEY-DUCEY is a card game in which the dealer shows two cards from deck. You bet 
+(from 1 to 9) that the next dealer card lies between or equal to the first two 
+cards in face value (ACES are low). 
+
+In order to obtain a new deal, press the zero key, and then bet as before. Try for 
+a score of 100 or greater. 
+
+
+Controls:
+---------
+1 to 9 = Betting
+0 = New Deal
+

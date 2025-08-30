@@ -1,0 +1,17 @@
+
+Invisible Man
+=============
+by MrEmerson (Octojam 7)
+
+
+About:
+------
+Recently found  as part of a long-lost archive of early digital black studies at Saint Augustine's University, 
+this  game is an adaptation of the prologue of Ralph Ellison's novel Invisible Man.
+
+
+Controls:
+---------
+Move the player left (7) and right (9) as he walks down the street.
+
+

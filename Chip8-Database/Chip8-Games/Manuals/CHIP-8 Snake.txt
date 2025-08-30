@@ -1,0 +1,15 @@
+
+CHIP-8 Snake
+============
+by steveRoll (Octojam 7)
+
+
+About:
+------
+A snake game made for the CHIP-8. Due to technical restrictions, you can achieve a maximum score of 125.
+
+
+Controls:
+---------
+2, 4, 6, 8 to move, F to restart.
+(arrow keys to move, r to restart)

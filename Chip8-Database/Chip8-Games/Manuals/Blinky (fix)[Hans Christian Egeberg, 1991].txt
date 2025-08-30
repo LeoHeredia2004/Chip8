@@ -1,0 +1,9 @@
+This version does not have the Fx55/Fx65 (load_store_quirk) or shift issue (where map is rendered 
+improperly and it freezes when you hit a wall)
+
+
+
+This game is a PACMAN clone. 
+Your goal is to eat all the balls in the maze. There are some enemies, so be careful. 
+
+Use 2, 4, 6 and 8 to move.

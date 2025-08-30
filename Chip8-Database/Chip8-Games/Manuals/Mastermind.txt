@@ -1,0 +1,15 @@
+
+Mastermind - by William Donnelly (2015)
+---------------------------------------
+OctoJam 2
+
+
+MasterMind was originally intended to be written for the 2015 OctoJam Octo-ber Jam II contest.
+But there wasn't enough time to finish it.
+
+Instructions and rules for playing the game are included in the game play.
+
+
+Controls:
+---------
+Uses all keys to play.

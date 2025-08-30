@@ -1,0 +1,20 @@
+============================
+Fx0A opcode test for Chip8.
+============================
+Author: Shendo
+
+About:
+-------
+This test rom will do a few simple checks to ensure that
+Fx0A opcode is properly executed.
+
+Usage:
+-------
+When you see "GO" printed on the screen press any key (0 to F) to start the test.
+If testing went as expected "OK" should be displayed. If you get an error code read further.
+
+Error codes:
+-------------
+Error 1: Register did not get updated with a value of the pressed key.
+Error 2: Stored value is higher then 0xF.
+Error 3: Currently pressed key does not equal to stored key.

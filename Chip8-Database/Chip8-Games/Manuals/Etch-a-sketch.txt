@@ -1,0 +1,22 @@
+
+Etch-a-sketch - by KrzysztofJeszke (2020)
+-----------------------------------------
+https://github.com/KrzysztofJeszke/chip8games
+
+
+A drawing program.
+
+
+
+Controls:
+---------
+5 = Draw up
+6 = Draw Left
+7 = Draw Down
+8 = Draw Right
+
+5 & 6 = Draw Diagonaly
+5 & 8 = Draw Diagonaly
+6 & 7 = Draw Diagonaly
+7 & 8 = Draw Diagonaly
+

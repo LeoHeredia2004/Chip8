@@ -1,0 +1,19 @@
+
+Tank! - by RectusSA (2018)
+--------------------------
+OctoJam 5
+
+
+A two player game where you fire shells at each other.
+
+
+Controls:
+---------
+5/8 - Change the shot power.
+
+7/9 - Change the shot angle.
+
+E - Fire!
+
+
+http://www.awfuljams.com/octojam-v/games/tank

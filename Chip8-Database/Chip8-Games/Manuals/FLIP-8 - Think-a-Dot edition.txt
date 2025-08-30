@@ -1,0 +1,73 @@
+
+FLIP-8: Think-a-Dot edition
+===========================
+by Tobias V. Langhoff (octojam 7)
+
+
+About:
+------
+This is a version of Joseph Weisbecker's game Think-a-Dot (1965) aka. Flip (1974) implemented in Weisbecker's 
+own CHIP-8 language for the COSMAC VIP computer (1977) he designed while at RCA.
+
+
+How to Play:
+------------
+Press 1, 2 or 3 to drop a marble into the respective hole. The marble will move through the flip-flops, moving 
+either left or right at each one depending on its state, flipping the ones it hits before popping out on the 
+bottom. Play around with it on the title screen to get a feel for how it works, or make up your own game around 
+its rules.
+
+You can always press 4 to reset back to the starting layout.
+
+Press any of the following keys to generate a random goal pattern, displayed to the right:
+
+- R: New game from random layout (shake)
+- F: New game from default layout (tilt left)
+- V: New game from inverted layout (tilt right)
+
+
+TWO PLAYER MODE:
+----------------
+You can also play with a friend. Choose who goes first, player 1 or player 2; after that, you can continue 
+dropping the marble as long as the marble comes out on your side (watch the arrows at the bottom). Your goal 
+patterns are inverts of each other.
+
+For convenience, start playing by pressing any of the following keys to display both patterns:
+
+- E: New game from random layout (shake)
+- D: New game from default layout (tilt left)
+- C: New game from inverted layout (tilt right)
+
+
+HISTORY:
+--------
+In 1965, Joseph A. Weisbecker invented an educational mechanical toy computer called the Think-a-Dot
+(https://www.jaapsch.net/puzzles/patents/us3388483.pdf), which was manufactured by E.S.R., Inc. In 1974, 
+Weisbecker detailed a design for an electronic CMOS computer version of the game, called Flip, in the 
+magazine Popular Electronics. In 1977, Weisbecker's simple programming language CHIP-8 was introduced for 
+RCA's COSMAC VIP microcomputer, which was also based on his designs. Read more in The Sarnoff Collection's 
+article on Think-a-Dot. (https://davidsarnoff.tcnj.edu/2017/12/10/object-of-the-week-think-a-dot/)
+
+
+MATHEMATICS:
+------------
+Think-a-Dot was covered in Mathematics Magazine in 1967, 1973 and 1979. The game has some interesting characteristics. 
+For example, as proven by Benjamin L. Schwartz in his paper "Mathematical Theory of Think-A-Dot" published in 
+Mathematics Magazine, Vol. 40, No. 4 (Sep., 1967): When playing Think-A-Dot, it's impossible to flip an even number 
+of spots. Try it yourself! No wonder: It always flips one spot in both the top and bottom row. This of course means 
+that if your starting pattern has an even number of flipped spots in those two rows, you can never reach a pattern 
+with an odd number of flipped spots – and vice versa. In computing, we say that you can't change the pattern's parity.
+
+This also means that from the default starting position, only half of the possible patterns can be reached. Interestingly, 
+this includes inverting the default pattern, since the total number of spots in the top and bottom rows is even (6).
+
+Interestingly, the original instruction booklet for Think-a-Dot listed 20 goal patterns for the starting pattern when 
+tilting to the left, and 20 goal patterns for tilting to the right. But they were all from the same possibility space!
+
+FLIP-8 takes this limitation into account when generating random goal patterns: Any pattern you get can always be 
+solved. You can also randomize the starting pattern completely, gaining access to the other half of the possible goal 
+patterns.
+
+You can read more about the mathematics behind the game on Jaap's Puzzle Page on Think-a-Dot.
+https://www.jaapsch.net/puzzles/thinkadot.htm
+

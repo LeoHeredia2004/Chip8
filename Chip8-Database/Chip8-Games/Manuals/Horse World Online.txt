@@ -1,0 +1,12 @@
+
+Horse World Online - by TomR (2014)
+-----------------------------------
+Octo-Ber Jam 1
+
+
+An online horse breeding game. Breed horses to win. 
+
+
+Controls:
+---------
+Hold the A (z) key to breed.

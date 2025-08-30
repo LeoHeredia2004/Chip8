@@ -1,0 +1,16 @@
+
+Ded-Lok - by ParityB1t (2016)
+-----------------------------
+
+Dodge enemy arrows!
+
+Shooting a lot of arrows creates an 'arrow forest' making it hard to estimate 
+enemy position, so be vigilant! ( Doesn't apply to enemy :D )
+
+
+Controls:
+---------
+'7' and '9' to move left and right.
+'5' to shoot
+
+Press '6' to reset once the game is over.

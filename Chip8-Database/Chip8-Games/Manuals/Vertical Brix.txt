@@ -1,0 +1,9 @@
+
+Vertical Brix - by Paul Robson (1996)
+-------------------------------------
+
+Like BRIX, but the brix are put vertically, and the pad also moves vertically. 
+
+Start by pressing 7, and move using 4 and 1.
+
+*NOTE: 7->5 1->2 4->6

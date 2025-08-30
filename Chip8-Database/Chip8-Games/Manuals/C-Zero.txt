@@ -1,0 +1,17 @@
+
+C-Zero - by Ethan Pini (2019)
+-----------------------------
+Team CHIPOTLE - https://chip.netlify.app/emulator/
+
+
+A racing game inspired by Chris Covell's tribute to the iconic Nintendo franchise. 
+
+
+Controls:
+---------
+"5" = DRIVE
+"7" = LEFT 
+"9" = BRAKE  
+"8" = RIGHT 
+
+

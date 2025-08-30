@@ -1,0 +1,13 @@
+
+SNEK - by glitchland (2020)
+---------------------------
+
+Classic game SNEK (Snake) made for CHIP-8 by glitch. 
+Shouts to makin-games on NL.
+
+Press 2/W/Q/E to move the snek.
+
+
+
+
+https://github.com/glitchland/CHIPPY 

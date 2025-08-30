@@ -1,0 +1,20 @@
+# 2048 (0x800)
+A Chip8 implementation of the tile sliding game 2048.
+
+## Controls
+5: Slide tiles up  
+7: Slide tiles left  
+8: Slide tiles down  
+9: Slide tiles right  
+(This corresponds to the default WASD mapping in Octo and potentially other Chip8 emulators)
+
+Pressing any other key will cause the buzzer to sound (indicating an invalid input) and the game will continue to wait for input.
+
+## Game play
+Each time a move is made tiles are moved to the specified direction, tiles which collide and have the same value are combined, then a new tile is spawned.
+When an invalid move is made (leaving no free spaces for a new tile to spawn) the game ends and the buzzer sounds. No consideration is made for whether there
+ were other valid moves available. The player may press any key to start again.
+
+## Notes
+The game runs best at 30 cycles/sec or faster. Below this speed it's slow to respond (probably a combination of drawing the whole screen each frame and the
+ load/save when processing moves).

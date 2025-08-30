@@ -1,0 +1,15 @@
+
+Spoong - by SupSuper (2018)
+---------------------------
+OctoJam 5
+
+
+Two-player Halloween Pong. Made in one hour because I'm bad with deadlines.
+
+
+Controls:
+---------
+Press any key to start.
+
+Player 1: 4 / 7
+Player 2: D / E

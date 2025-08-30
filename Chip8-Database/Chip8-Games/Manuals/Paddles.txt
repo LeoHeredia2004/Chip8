@@ -1,0 +1,14 @@
+
+Paddles - by ??? (unknown author)(xxxx)
+---------------------------------------
+
+
+Controls:
+---------
+F = 1P game
+E = 2P game 
+
+7/9 = P1 left/right
+4/6 = P2 left/right
+
+

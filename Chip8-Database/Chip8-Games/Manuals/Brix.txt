@@ -1,0 +1,9 @@
+
+Brix - by Andreas Gustafsson (1990)
+-----------------------------------
+
+This game is an "arkanoid" precursor. You have 5 lives, and your
+goal is the destruction of all the brixs. Use 4 and 6 to move
+your paddle. The game ends when all the brixs are destroyed.
+
+

@@ -1,0 +1,6 @@
+Sub Chase, by: Carmelo Cortez
+
+The Sub Game is my favorlte. Press "5" key to fire depth charges at the subs below. 
+You score 15 points for a small sub and 5 points for the larger. You get 25 depth charges to start.
+
+Sub Chase is a simplified version of the arcade game Depthcharge. The aim is to score as many points as possible by hitting the submarines that move across the screen. Small subs are worth 15 points while the bigger ones are worth five. The player has 25 depth charges and the game ends when they have been used up. Unlike the arcade game the destroyer moves by itself and the player's input is limited to pressing a single button to drop the charges at the right time.

@@ -1,0 +1,16 @@
+
+Slippery Slope - by John Earnest (2018)
+---------------------------------------
+OctoJam 5
+
+
+The ice we skate is getting pretty thin. The water's getting warm so you might as well swim.
+
+
+7/8/5/9 (ASWD) = move
+
+6 (E) resets the current level
+
+When you've finished the game, make your own levels:
+
+http://beyondloom.com/tools/slipedit.html

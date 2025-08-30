@@ -1,0 +1,18 @@
+
+Minesweep8r - by James Kohli aka Hottie Pippen (2014)
+-----------------------------------------------------
+Octo-Ber Jam 1
+
+
+Minesweper port for the Chip-8.
+
+
+Controls:
+---------
+5/7/8/9 (WASD) to move, 4 (Q) to click, 6 (E) to flag, D (R) to restart.
+
+
+
+
+Can play online here:
+https://johnearnest.github.io/Octo/index.html?gist=384b836bbe4279fdae2b

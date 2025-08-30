@@ -1,0 +1,19 @@
+
+Snake - by Daniel Jianoran (2018)
+---------------------------------
+
+It is a small version of Snake. There is no wall so you
+can go to the other side of the screen without dying.
+Once you touch an apple (dot), you will hear a beep and then
+go on to the next apple. If you touch your tail, the game end.
+
+Control (hexpad):
+-----------------
+5 to go UP
+7 to go LEFT
+8 to go DOWN
+9 to go RIGHT
+
+
+
+Manual made by Sly DC.

@@ -1,0 +1,28 @@
+
+Piper - by Jordan Mecom, Alice & Lilian Wang (2017)
+---------------------------------------------------
+Global Game Jam 2017
+
+
+Play as a small bird to collect goodies and avoid waves
+
+
+This game is inspired by Pixar's short film of the same name. Piper is a little 
+bird who is learning to collect shells and goodies on the beach. But when the 
+wave comes in, she needs to hide in the sand to avoid getting wet. The waves 
+wash in new goodies for Piper to pick up. Collect as many goodies as you can 
+and avoid getting wet! This is a Chip8 game made with Octo. 
+
+
+Controls:
+--------- 
+Movement: 5, 7, 8, 9 
+Hide: 6
+
+
+
+
+
+https://globalgamejam.org/2017/games/piper
+
+https://johnearnest.github.io/Octo/index.html?gist=d493293d8d36782aabc2a34b5f761afb

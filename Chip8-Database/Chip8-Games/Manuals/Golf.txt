@@ -1,0 +1,17 @@
+
+Golf - by buffi (2019)
+----------------------
+OctoJam 6
+
+
+Golf (rather Mini Golf) for the Chip-8.
+
+
+Controls:
+---------
+5 = Shoot the ball
+7 & 9 = Aim
+
+
+Bug ? TomR reported in August 2020:
+"I missed and got the ball stuck in the G on the last level!"

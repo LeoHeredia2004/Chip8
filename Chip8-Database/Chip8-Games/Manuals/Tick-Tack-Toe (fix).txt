@@ -1,0 +1,16 @@
+
+Tick-Tack-Toe (fix) - by Joseph Weisbecker (1977)
+-------------------------------------------------
+Cosmac VIP CDP18S711 Book - Page 46 (VIP-311)
+
+
+This program uses the CHIP-8 INTERPRETER at 0000-01FF. You are "O", VIP is "X". 
+You move first. Press key 1-9 to put your "O" into a square. Squares are in the 
+same positions as keys 1-9. VIP then puts an "X" into an empty square. 
+
+If you get three "O" 's in a row you win the game. If VIP gets three "X" 's in a 
+row you lose the game. The game is a draw when all squares are filled without 
+getting 3 in a row. You can beat VIP because it is programmed to make a mistake 
+once in a while. 
+
+

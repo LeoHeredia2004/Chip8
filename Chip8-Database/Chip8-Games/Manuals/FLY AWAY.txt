@@ -1,0 +1,36 @@
+
+FLY AWAY (by Mizerable)(2023)
+-----------------------------
+This is a CHIP-8 game my dad and I made together! It was a lot of blood, sweat, and tears!
+
+
+The Story:
+----------
+One spring day, hundreds of years ago, an old farmer’s daughter named Judith spied a strange egg in the chicken coop. 
+It was much larger than what any normal broody hen could ever lay, its surface blue and textured. Judith, enamored by 
+it, took it inside the cottage, wrapped it in cloth, and set it out in sunlight. Much to the child’s surprise, the egg 
+hatched! Indeed, it was not a chicken that popped out, but a baby dragon!
+
+Judith named the baby Roo. She tried her best to keep the creature’s existence a secret, keeping her out of sight and 
+letting her hunt the fat mice that terrorized their barn. It was only a matter of time, however, before her older 
+brother discovered the young dragon. Soon enough, the town’s most famous monster hunter was knocking on their door with 
+his crossbow, demanding for Roo to be killed. Terrified, Judith opened her bedroom window and set Roo free. 
+
+Unfamiliar with flying, Roo must collect wisps of energy that fly through the air while she dodges the arrows from the 
+hunter’s arrows. Aid in her escape!
+
+
+
+The Controls:
+-------------
+To move Roo Up: “W”
+
+To move Roo Down: “S”
+
+
+
+The Goal:
+---------
+Control Roo to dodge the arrows headed her way while collecting energy dots. Hitting one arrow results in a Game Over. 
+Collect as many energy dots as you can before hitting an arrow. You will be given a score total on the death screen.
+

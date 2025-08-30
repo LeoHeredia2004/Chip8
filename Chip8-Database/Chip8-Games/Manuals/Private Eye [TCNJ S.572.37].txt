@@ -1,0 +1,17 @@
+
+Private Eye [TCNJ S.572.37] - by Joyce Weisbecker ?? (197x)
+-----------------------------------------------------------
+
+NOTE: Was this made by Joyce Weisbecker because it looks very much as "Sequence Shoot".
+       
+
+This one is a simple shooter. Just try to shoot the big moving white square.
+If you are successful to shot it, you get 10 points.
+
+
+Controls:
+---------
+3 = Shoot Upward
+6 = Shoot Strait
+9 = Shoot Downward
+

@@ -1,0 +1,16 @@
+
+Planet of the Eights - by Comrat (2016)
+---------------------------------------
+OctoJam 3
+
+
+The last 32-bit register is trying to survive on the terrible planet of the Eights using air balloon.
+
+
+Controls:
+---------
+Use 5/7/8/9 (WASD) keys to control air balloon.
+
+If you will reach the earth - i will die
+    
+Press "8" to start a game.

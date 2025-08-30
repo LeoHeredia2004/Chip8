@@ -1,0 +1,11 @@
+
+Super NeatBoy
+=============
+
+"oh no; what has happened to all my leaves? I must find them and bring them back home!"
+
+
+Controls:
+---------
+Move with A/D or left/right arrows, and press E or space to jump. Pressing "1" will reset the game. 
+

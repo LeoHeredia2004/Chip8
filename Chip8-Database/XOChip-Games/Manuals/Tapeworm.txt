@@ -1,0 +1,12 @@
+Tapeworm
+
+    Eat food or die
+    Bigger worms move faster
+    Don't eat yourself
+
+Known issue(s)
+
+    Color scheme and graphics need polish
+    Speed and shrink rate need tuning
+
+Made in OctoDE

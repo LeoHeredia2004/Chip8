@@ -1,0 +1,16 @@
+
+Deflap (fix) - by hitcherland (2015)
+------------------------------------
+
+Another Flappy Bird clone. 
+
+
+Controls (hexpad):
+------------------
+"B" = Jump (or flap)
+
+
+FIX: The author made a mistake by displaying "Jump=C" but in reality,
+     it is actually the "B" button and not "C" as the "C" button is
+     for the Octo assembler. Now it displays "Jump=b" (sprite fix).
+     Sprite fix by Sly DC.

@@ -1,0 +1,24 @@
+Draw a single stroke, flip tiles from black to white or vice versa, and turn each single line into a solid 
+color each.
+
+A Polarium demake for HP 48 graphing calculators, implemented in Octo for SUPER-CHIP.
+
+Instructions on how to load and run this program on your own HP 48 calculator
+Gameplay
+
+Chipolarium is a puzzle game with 100 levels, where the goal for each level is to flip black and white tiles 
+so each row is a single color, by drawing a connected stroke through all tiles to flip.
+Controls
+
+The controls will vary depending on whether you're running in your browser, on an actual HP 48 calculator, 
+or in a general CHIP-8/SUPER-CHIP emulator/interpreter.
+
+
+	                      | Web / Octo	      | HP 48 	 | CHIP-8  |
+---------------------------------------------------------------------------- 
+Move	                      | W A S D or arrow keys |	5 1 2 3  | 5 7 8 9 |
+Select, draw/finish stroke    | E, Space or Return    | 6 	 | 6       |
+Return to menu, cancel stroke | Q or Escape 	      | 4	 | 4       |
+Show hint	              | H	              | SPC	 | B       |
+----------------------------------------------------------------------------
+

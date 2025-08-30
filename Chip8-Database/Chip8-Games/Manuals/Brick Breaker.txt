@@ -1,0 +1,17 @@
+
+Brick Breaker - by Kyle Saburao (2019)
+--------------------------------------
+Team CHIPOTLE - https://chip.netlify.app/emulator/
+
+
+Brick Breaker, now avaliable for the CHIP-8!
+
+
+Controls:
+---------
+
+"7" = LEFT
+"9" = RIGHT
+
+
+

@@ -1,0 +1,29 @@
+
+Carbon8 - by Mastigophoran (2018) 
+---------------------------------
+
+A period correct movie tie in game for a popular 1980s franchise.
+
+
+The Slab will form as Carbonite and Filler flow into the chamber over time. The freezing 
+process is only complete once the entire slab is formed. It is at this time that judgement 
+will be rendered.
+
+Your goal is to try and match both of the target internal and external temperature goals 
+for the subject being frozen, but this only matters in the same instant that the slab is 
+completed.
+
+This will achieve the best result and help you move forward to the next round. You will 
+need to master the multiple aspects of the Carbonite Chamber in order to achieve all of 
+your goals.
+
+
+
+Controls (hexpad):
+------------------
+
+4 & 7 = controls the Vent dial. Allows warm outside air in to warm up the target
+
+8 & 9 = controls the Carbonite flow. This will cool the target down
+
+D & E = controls the Filler gas flow. This will allow you to fill the mass needed faster without cooling the target down.

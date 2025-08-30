@@ -1,0 +1,13 @@
+
+Tapeworm - by JDR (1999)
+------------------------
+
+Another Snake clone. Make a very long snake. 
+
+
+Controls:
+---------
+F=start,
+2 4 6 8=turn.
+	  
+*NOTE: F->5

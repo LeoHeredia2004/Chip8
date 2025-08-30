@@ -1,0 +1,37 @@
+You play a safecracker with 12 chances to guess a 4-digit passcode. Luckily for you, your tools and flaws 
+in the safe will make it easier.
+
+If you prefer to play with touch or mouse, tap or click the screen to bring up a Chip-8 keypad.
+
+Rules
+
+Your current guess is the rightmost column of numbers.
+
+The passcode will not use a digit more than once. If the currently selected passcode repeats digits, an "X" 
+will be displayed above it, and you won't be able to submit it. A valid passcode will display "OK" above it. 
+Decreasing or increasing a digit past 0 or 9 will wrap around to the other side. 
+
+After every guess, you will see feedback above it in the form of up to four dots:
+
+    Every dark dot represents a digit in the correct location
+    Every light dot represents a digit that is somewhere in the passcode, but currently in the wrong place
+    Fewer than four dots means that not all of the digits in your guess are in the passcode
+    0 dots mean that none of the digits you guessed are in the code
+
+After the 12th guess, the game will be over, and you will win or lose depending on whether your last guess was 
+correct. You can also win earlier by deducing and submitting the correct passcode. 
+
+After a game is over, you can press the submit key to start a new game.
+
+Controls
+
+If you prefer to play with touch or mouse, tap or click the screen to bring up a Chip-8 keypad. 
+PC Keyboard Key(s)	Chip-8 Keypad Key(s)	Game Action
+F	E	Submit current passcode if valid ("OK" displayed above rightmost column)
+1, 2	1, 2	Increment / decrement 1st digit
+Q, W	4,5	Increment / decrement 2nd digit
+A, S	7, 8	Increment / decrement 3rd digit
+Z, X	A, 0	Increment / decrement 4th digit
+
+Sadly,  sound has been omitted in the Octojam release version due to unexpected events during the time allotted 
+for development.

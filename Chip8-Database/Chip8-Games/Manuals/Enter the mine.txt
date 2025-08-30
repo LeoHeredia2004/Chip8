@@ -1,0 +1,11 @@
+
+Enter the mine (by Thomas Quester - 2023)
+-----------------------------------------
+
+A jump and run game that reminds of some games for the ZX Spectrum.
+
+The objective of the game is to reach the door at the other side of the screen.
+
+A = Left
+D = Right
+W = Jump

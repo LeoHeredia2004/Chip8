@@ -1,0 +1,4 @@
+
+Keep the ball bouncing and don't let it touch the border. Game gets faster every 5 points.
+
+Use WASD/Arrows to control the paddles and E to reset.

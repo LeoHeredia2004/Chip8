@@ -1,0 +1,16 @@
+
+Snake - by Henry Wang (2019)
+----------------------------
+Team CHIPOTLE
+
+
+Snake for the CHIP-8. 
+
+
+Controls:
+---------
+"5": "UP"
+"7": "LEFT"
+"9": "DOWN"
+"8": "RIGHT"
+

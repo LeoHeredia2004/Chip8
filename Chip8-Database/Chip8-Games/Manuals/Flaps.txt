@@ -1,0 +1,12 @@
+
+Flaps - by Phillip Wagner (2014)
+--------------------------------
+OctoJam 1
+
+
+Game style like Flappy Birds.  
+
+
+Controls:
+---------
+Press "6" to flap.

@@ -1,0 +1,7 @@
+#--------------------------------------------------------------
+# UniBlinky - A Blinky remake for multiple CHIP-8 variants
+# (C) 2022 by Steffen "Gulrak" Schümann
+# Heavily inspired by CHIP-48 Blinky by Christian Egeberg
+# and MegaBlinky by Revival Studios
+# Level layout is the same as in the other implementations
+#--------------------------------------------------------------

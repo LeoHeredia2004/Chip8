@@ -1,0 +1,132 @@
+:proto L5 # 278
+:proto L6 # 282
+:proto L7 # 28A
+:proto L8 # 2A2
+:proto L9 # 2BA
+:proto L10 # 2C2
+:proto L11 # 2C8
+:proto Sub1 # 2D4
+:proto D1 # 2EA
+:proto D2 # 2F0
+:proto D3 # 2F2
+: main 
+vA := 2
+vB := 12
+vC := 63
+vD := 12
+i := D1
+sprite vA vB 6
+sprite vC vD 6
+vE := 0
+Sub1
+v6 := 3
+v8 := 2
+: L1 
+v0 := 96
+delay := v0
+loop
+  v0 := delay
+  if v0 != 0 then 
+again
+v7 := random 0b10111
+v7 += 8
+v9 := -1
+i := D2
+sprite v6 v7 1
+loop
+  i := D1
+  sprite vA vB 6
+  sprite vC vD 6
+  v0 := 1
+  if v0 key then vB += -2
+  v0 := 4
+  if v0 key then vB += 2
+  v0 := 31
+  vB &= v0
+  sprite vA vB 6
+  vD := v7
+  v0 := random 0b1010
+  vD += -2
+  if v0 == 0 then vD += 2
+  v0 := 0
+  v0 := 31
+  vD &= v0
+  sprite vC vD 6
+  i := D2
+  sprite v6 v7 1
+  v6 += v8
+  v7 += v9
+  v0 := 63
+  v6 &= v0
+  v1 := 31
+  v7 &= v1
+  if v6 == 2 then jump L5
+  if v6 == 63 then jump L6
+: L4 
+  if v7 == 31 then v9 := -1
+  if v7 == 0 then v9 := 1
+  sprite v6 v7 1
+again
+: L5 
+v8 := 2
+v3 := 1
+v0 := v7
+v0 -= vB
+jump L7
+: L6 
+v8 := -2
+v3 := 10
+v0 := v7
+v0 -= vD
+: L7 
+if vF != 1 then jump L8
+v1 := 2
+v0 -= v1
+if vF != 1 then jump L9
+v0 -= v1
+if vF != 1 then jump L11
+v0 -= v1
+if vF != 1 then jump L10
+: L8 
+v0 := 32
+buzzer := v0
+Sub1
+vE += v3
+Sub1
+v6 := 62
+if v3 != 1 then v6 := 3
+v8 := -2
+if v3 != 1 then v8 := 2
+jump L1
+: L9 
+v9 += -1
+if v9 == -2 then v9 := -1
+jump L11
+: L10 
+v9 += 1
+if v9 == 2 then v9 := 1
+: L11 
+v0 := 4
+buzzer := v0
+v6 += 1
+if v6 == 64 then v6 += -2
+jump L4
+
+: Sub1 
+i := D3
+bcd vE
+load v2
+i := hex v1
+v4 := 20
+v5 := 0
+sprite v4 v5 5
+v4 += 21
+i := hex v2
+sprite v4 v5 5
+return
+: D1 
+0x80 0x80 0x80 0x80 0x80 0x80 
+: D2 
+0x80 0x0 
+: D3 
+0x0 0x0 0x0 0x0 

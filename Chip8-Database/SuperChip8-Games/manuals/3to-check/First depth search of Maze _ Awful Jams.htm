@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class=" csscalc opacity cssvhunit backgroundsize bgsizecover csscolumns csscolumns-width no-csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth no-csscolumns-breakbefore no-csscolumns-breakafter no-csscolumns-breakinside flexbox objectfit object-fit"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="First%20depth%20search%20of%20Maze%20_%20Awful%20Jams_files/3c34f9a572222b9e1ad0195f5d4cb011fdb7a898.css">  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="First%20depth%20search%20of%20Maze%20_%20Awful%20Jams_files/f5b5c3fb745085a4e05f0f492abcd9c6218428ab.css">
+<meta name="fragment" content="!">
+<meta charset="UTF-8">
+
+<script async="" src="First%20depth%20search%20of%20Maze%20_%20Awful%20Jams_files/analytics.js"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-64196251-1', 'auto');ga('send', 'pageview');</script>
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://www.awfuljams.com/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="http://www.awfuljams.com/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://www.awfuljams.com/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://www.awfuljams.com/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://www.awfuljams.com/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://www.awfuljams.com/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="http://www.awfuljams.com/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://www.awfuljams.com/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://www.awfuljams.com/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="http://www.awfuljams.com/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://www.awfuljams.com/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="http://www.awfuljams.com/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://www.awfuljams.com/favicon-16x16.png">
+
+
+
+
+
+<title>First depth search of Maze | Awful Jams</title><meta property="og:image" content="http://www.awfuljams.com/images/sagdc-x-logo-large.png"><meta property="og:site_name" content="Awful Jams"><meta property="twitter:title" content="First depth search of Maze | Awful Jams"><meta property="twitter:url" content="http://www.awfuljams.com/octojam-iv/games/first-depth-search-of-maze"><meta property="og:url" content="http://www.awfuljams.com/octojam-iv/games/first-depth-search-of-maze"><meta name="description" content="Lets walk yourself to the way out!"><meta property="twitter:description" content="Lets walk yourself to the way out!"><meta property="og:description" content="Lets walk yourself to the way out!"><meta property="og:title" content="First depth search of Maze"></head>
+<body class="octojam-iv" data-jam="octojam-iv">
+
+
+
+<script type="text/javascript">__meteor_runtime_config__ = JSON.parse(decodeURIComponent("%7B%22meteorRelease%22%3A%22METEOR%401.3.2.4%22%2C%22meteorEnv%22%3A%7B%22NODE_ENV%22%3A%22production%22%2C%22TEST_METADATA%22%3A%22%7B%7D%22%7D%2C%22PUBLIC_SETTINGS%22%3A%7B%7D%2C%22ROOT_URL%22%3A%22http%3A%2F%2Fwww.awfuljams.com%22%2C%22ROOT_URL_PATH_PREFIX%22%3A%22%22%2C%22accountsConfigCalled%22%3Atrue%2C%22appId%22%3A%22rnghwrurxooe1tisuw6%22%2C%22autoupdateVersion%22%3A%2264165f72b682326824f0d2679f7cff3dde2e59bc%22%2C%22autoupdateVersionRefreshable%22%3A%227c80ac77da28f07d8255420f2ca14670f546bacc%22%2C%22autoupdateVersionCordova%22%3A%22none%22%7D"));</script>
+
+  <script type="text/javascript" src="First%20depth%20search%20of%20Maze%20_%20Awful%20Jams_files/92dc0ff5394e2ef14f25a8ae978b539d472ec5a7.js"></script>
+
+
+
+
+<div class="ui dimmer modals page transition hidden" style="display: none;">
+		
+		
+		
+		
+		
+		
+
+		
+		
+	</div><div class="site-container page-gameDetails">
+
+		
+
+		<div class="ui inverted teal vertical segment site-header">
+		<div class="ui stackable middle aligned two column grid container">
+
+			<div class="column">
+				<a href="http://www.awfuljams.com/"><img src="First%20depth%20search%20of%20Maze%20_%20Awful%20Jams_files/logo.png" class="logo" title="Awful Jams - Beta"></a>
+			</div>
+
+		</div>
+	</div>
+
+		<nav class="ui attached stackable pointing teal menu site-navbar">
+
+		<a class="item" id="toggle-menu"><i class="ui sidebar icon"></i> Menu</a>
+
+		<div class="ui container">
+			
+				<a href="http://www.awfuljams.com/octojam-iv" class="item active">Octojam IV</a>
+			
+			
+				
+			
+			<div class="ui dropdown item simple">
+				<label>Past Jams <i class="dropdown icon"></i></label>
+				<div class="menu">
+					
+						
+					
+						
+							<a href="http://www.awfuljams.com/awful-summer-jam-2017" class="item">Awful Summer Jam 2017</a>
+						
+					
+						
+							<a href="http://www.awfuljams.com/little-awful-2017" class="item">Little Awful 2017</a>
+						
+					
+						
+							<a href="http://www.awfuljams.com/octojam-iii" class="item">Octojam III</a>
+						
+					
+						
+							<a href="http://www.awfuljams.com/big-awful-2016" class="item">Big Awful 2016</a>
+						
+					
+						
+							<a href="http://www.awfuljams.com/little-awful-2016" class="item">Little Awful 2016</a>
+						
+					
+						
+							<a href="http://www.awfuljams.com/octojam-ii" class="item">Octo-ber Jam II</a>
+						
+					
+						
+							<a href="http://www.awfuljams.com/sagdc-x" class="item">SAGDC X</a>
+						
+					
+						
+							<a href="http://www.awfuljams.com/octojam-i" class="item">Octo-ber Jam I</a>
+						
+					
+				</div>
+			</div>
+
+			<div class="right menu">
+				
+	
+
+	<a href="https://twitter.com/awfuljams" class="item item-twitter hide-at-device" target="_blank">
+		<div class="ui twitter icon button"><i class="twitter icon"></i></div>
+	</a>
+
+	
+		<a href="http://www.awfuljams.com/login" class="item">Login</a>
+	
+			</div>
+		</div>
+	</nav>
+	
+		<nav class="ui attached stackable pointing secondary teal menu">
+			<div class="ui container">
+				<a href="http://www.awfuljams.com/octojam-iv" class="item">Home</a>
+
+				
+
+				
+					<a href="http://www.awfuljams.com/octojam-iv/games" class="item">Submissions</a>
+				
+
+				
+					<a href="http://www.awfuljams.com/octojam-iv/winners" class="item">Winners</a>
+				
+				
+					<a href="http://www.awfuljams.com/octojam-iv/wall-of-shame" class="item">Wall of Shame</a>
+				
+
+				<div class="right menu">
+					
+  
+    
+  
+				</div>
+			</div>
+		</nav>
+	
+
+		
+
+		
+		<div class="ui container" style="margin: 1em 0;">
+			<div class="ui messages">
+				
+			</div>
+		</div>
+	
+
+		<div class="ui container site-inner">
+			<h1 class="ui header">
+		First depth search of Maze
+		
+	</h1>
+
+	<h4 class="ui header">Team: <a href="#about-the-team">Conductive</a></h4>
+
+	
+
+	
+
+	
+		<div class="octo-embed-container">
+		<iframe src="First%20depth%20search%20of%20Maze%20_%20Awful%20Jams_files/octo-embed.htm" marginheight="0" marginwidth="0" scrolling="no" seamless="true" width="100%" height="456" frameborder="0"></iframe>
+
+		
+			<span class="fixed-button js-toggle-full-screen" alt="Toggle full screen"><i class="glyphicon glyphicon-resize-full"></i></span>
+		
+	</div>
+
+
+	
+		<div><small><a href="http://johnearnest.github.io/Octo/index.html?gist=91cb239def21b8534b784353498c6f60">Source</a></small></div>
+	
+
+	<p>This algorithm is comes from <a href="https://en.wikipedia.org/wiki/Maze">wiki</a> and I look at <strong>first search algorithm</strong>
+ to implement maze generation, but not a such memory were used (which 
+states of ways is determined by collision when maze is being generated).</p>
+<p>This is <strong>SuperChip</strong> compatible, even <strong>VIP</strong> if you modify it a bit (at maze length).</p>
+<p>Anyways in game play, press any key to bash that titlescreen, then <strong>WASD</strong> to walk around in ways. You shall not to pass the walls and get into flickin' dot at corner!</p>
+
+
+	<div class="ui horizontal divider" id="about-the-team">About The Team</div>
+
+	
+		<div class="ui item">
+		
+			<h2 class="ui header">Conductive</h2>
+
+			<h3 class="ui header">Team Members</h3>
+	<div class="ui middle aligned list">
+		
+			
+				<a class="item" href="http://www.awfuljams.com/user/AKouZ1">AKouZ1</a>
+			
+		
+	</div>
+
+			<p>With relation of arithmetical terms. This is capable for math experiments.
+Or otherthings else.</p>
+
+		
+	</div>
+	
+		</div>
+
+		
+
+	<div class="ui inverted teal segment site-footer">
+		<div class="ui container">
+			<div class="ui three column middle aligned grid">
+				<div class="column">
+					© Awful Jams 2017.
+				</div>
+				<div class="column">
+					<a class="ui small compact inverted button" href="http://www.awfuljams.com/help/">Help</a>
+					<a class="ui small compact inverted button" href="http://www.awfuljams.com/eula/">Legal</a>
+				</div>
+				<div class="column">
+					<a href="http://morrisonlee.com/"><img src="First%20depth%20search%20of%20Maze%20_%20Awful%20Jams_files/logo_002.png" alt="Morrison / Lee Law" width="150"></a><br>Official Legal Sponsor
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div></body></html>

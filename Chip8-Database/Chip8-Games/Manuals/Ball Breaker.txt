@@ -1,0 +1,8 @@
+
+Ball Breaker by verisimilitudes (2020)
+--------------------------------------
+
+Simple Breakout clone game. If you miss the ball, the
+game stops.
+
+Press "4" to go Left and "6" to go right.

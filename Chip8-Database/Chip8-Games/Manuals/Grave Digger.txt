@@ -1,0 +1,18 @@
+
+Grave Digger - by TomR (2017)
+-----------------------------
+OctoJam 4
+
+
+In grave digger you pull skeletons from the ground to help their ghosts escape!
+
+
+Controls:
+---------
+7 & 9 to move paddle.
+
+
+P.S. from the author:
+---------------------
+I stole this game from the first Octo Jam and changed the bricks to ghosts.
+

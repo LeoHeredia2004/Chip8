@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> <!-- Hacked together HTML Thing, could have been neater, but it just needed to work -->
+    <meta charset="utf-8">
+    <title>DVN8 - SEARCHING DUNGEON MYSTERY - FOR THE CHIP-8</title>
+    <link href="DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8_files/css.css <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8_files/css.css>" rel="stylesheet">
+    <link rel="icon" href="https://i.imgur.com/l13BRmF.png <view-source:https://i.imgur.com/l13BRmF.png>" sizes="16x16" type="image/png">
+    <style>
+        body {margin: 0 0 0 550px; padding: 0; background: url('bg.png') #dbc19e;font-family: 'Righteous', cursive;}
+        #f1 {
+            width: 540px;
+            height: 256px;
+            margin: auto;
+            text-align: center;
+            padding: 12px 0;
+            background: url('bg2.png') #0f0f0f;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            color: white;
+
+        }
+        #f2 {
+            padding: 10px 0;
+            width: 540px;
+            height: calc(100%);
+            background: url('bg3.png') #1f1003;
+            color: white;
+            position: fixed;
+            top: 280px;
+            left:0px;
+            text-align: center;
+            overflow: auto;
+        }
+
+        .titlepower
+        {
+            color: #aa1111;
+            font-family: 'Rye', cursive;
+            font-size: 110%;
+        }
+
+        #f2 a, #f2 a:visited {
+            color: #c8d0e6;
+        }
+
+        #f2 a:hover {
+            color: #edeff5;
+        }
+
+
+        #f3 {
+            padding: 0;
+            color: black;
+        }
+
+        .fixpad { padding-top: 200px; }
+
+        .textbox {
+            width: 80%;
+            margin: 0 auto 4000px auto;
+            border: 1px solid black;
+            padding: 10px;
+            color: black;
+            background: rgba(255, 255, 255, 0.8);
+            font-size: 120%;
+            line-height: 1.5em;
+        }
+        .textbox2 {
+            width: 80%;
+            margin: 0px auto 4000px auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .cool::first-letter {
+            font-size: 200%;
+            font-family: 'Rye', cursive;
+        }
+
+
+    </style>
+  </head>
+  <body>
+      <div id="f1">
+          <iframe src="DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8_files/embed.htm <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8_files/embed.htm>" marginheight="0" marginwidth="0" scrolling="no" seamless="true" style="" width="512" height="256" frameborder="0"></iframe>
+      </div>
+      <div id="f2">
+          <div style="width: 90%; margin: auto;">
+          <a href="#title <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#title>">[Title]</a>
+          <a href="#box <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#box>">[Box-Text]</a>
+          <a href="#id1 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id1>">[1]</a>
+          <a href="#id2 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id2>">[2]</a>
+          <a href="#id3 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id3>">[3]</a>
+          <a href="#id4 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id4>">[4]</a>
+          <a href="#id5 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id5>">[5]</a>
+          <a href="#id6 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id6>">[6]</a>
+          <a href="#id7 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id7>">[7]</a>
+          <a href="#id8 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id8>">[8]</a>
+          <a href="#id9 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id9>">[9]</a>
+          <a href="#id10 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id10>">[10]</a>
+          <a href="#id11 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id11>">[11]</a>
+          <a href="#id12 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id12>">[12]</a>
+          <a href="#id13 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id13>">[13]</a>
+          <a href="#id14 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id14>">[14]</a>
+          <a href="#id15 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id15>">[15]</a>
+          <a href="#id16 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id16>">[16]</a>
+          <a href="#id17 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id17>">[17]</a>
+          <a href="#id18 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id18>">[18]</a>
+          <a href="#id19 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id19>">[18-Bee]</a>
+          <a href="#id20 <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#id20>">[20]</a>
+          <a href="#credits <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8.htm#credits>">[Credits]</a><br><br>
+          Controls:<br>
+          Always <b>click</b> The Game in the Upper Left before moving. It will not accept keypresses until you do so.<br><br>
+          <b>W</b> - Move Up<br>
+          <b>S</b> - Move Down<br>
+          <b>A</b> - Move Left<br>
+          <b>D</b> - Move Right<br>
+          <br>
+          <br>
+          Tip Line Spoilers:<br>
+          <span style="color: black; background: black;">You are always facing north for every room.<br><br>
+          Pay attention to the details of rooms, it may help if your stuck.<br><br>
+          The UI lies to you once.<br><br>
+          The tips lie to you once.<br><br>
+          Go down from the Read 01 Screen.<br><br></span>
+      </div>
+      </div>
+      <div id="f3">
+
+           <div id="title" class="fixpad"></div><div class="textbox2"> <img src="DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8_files/cover.png <view-source:file:///C:/001/01-Roms/000-Chip8/00-Games/55-OctoJam4/DVN8%20-%20SEARCHING%20DUNGEON%20MYSTERY%20-%20FOR%20THE%20CHIP-8_files/cover.png>" alt="Box Art" hover="Classic Cover Art">
+
+                                <div id="box" class="fixpad"></div><div class="textbox">
+                                    <p class="titlepower">Box</p><p>You know it's time to do it, you've put it off, but you must dive deep into the sprawling walls and complete your goal. </p><p>Lifelike Mazes</p><p>Real Rooms</p><p>Bone Tingling Puzzles</p><p>A Octo-Powered Chip8 Experience!!</p>
+                                </div>
+
+
+
+           <div id="id1" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 01</p>
+               <p class="cool">You approach the sprawling abode with 
+your goal in mind. The doors look well worn, chips of colors flake down 
+the edges. The exterior is done in colors that remind you of a 
+gingerbread house.  The yard is tiny and is neatly-trimmed.  Strange 
+lights are moving about in the windows. You hear the trees behind you 
+blowing. </p>
+           </div>
+
+           <div id="id2" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 02</p>
+               <p class="cool">This large, square hallway has matching 
+wooden furniture along both walls.  The floor is carpeted, and the walls
+ are papered.  Light is provided by table lamps and a ceiling light.  
+The room is done in cold hard colors.  Among the first things one 
+notices walking in is an antique lamp. In the room ahead, you can see 
+the doors leading further in the abode. </p>
+           </div>
+           <div id="id3" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 03</p>
+               <p class="cool">You try the doors, you knock and shake 
+them but no luck. They do not budge from their solid oak frame. You look
+ to the left and see someone dressed like you looking to the left. You 
+look to the right and see another person dressed like you looking right.
+ Maybe one of them has the key?</p>
+           </div>
+           <div id="id4" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 04</p>
+               <p class="cool">As you walk towards them, they walk away 
+from you. You keep walking and they match your pace. As you look closer 
+you notice that it’s not someone dressed like you, it is you! This 
+hallway somehow loops back on itself. To be sure you nudge a painting on
+ the wall and you notice the other room’s “you” do the same.</p>
+           </div>
+           <div id="id5" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 05</p>
+               <p class="cool">It’s strange, seeing yourself repeated 
+down a long hallway. It’s a perfectly harmless trap that’s more 
+interesting than scary. All the rooms along this hallway have the same 
+design, so you feel like you could walk forever if you wished. You do 
+notice this room is slightly different than the others, there is a door 
+that leads to a small library to the south. </p>
+           </div>
+           <div id="id6" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 06</p>
+               <p class="cool">This cramped, rectangular library has 
+mismatched wooden, metal, and glass bookshelves along the south wall.  
+The floor is carpeted, and the walls are textured and painted.  Light is
+ provided by floor lamps and a ceiling light.  The room is done in a cat
+ theme in muted colors and overall has a cluttered look.  The first 
+think you notice walking in is a large antique key sitting in the middle
+ of the floor.</p>
+           </div>
+           <div id="id7" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 07</p>
+               <p class="cool">The house creeks as you walk down the 
+hallway. A strange nostalgic sent is wafting down the hallway. It’s 
+strange, you never thought the smell of burning flour would make you 
+feel this way. The smell is stronger as you head further north.</p>
+           </div>
+           <div id="id8" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 08</p>
+               <p class="cool">This small, square nook has large windows
+ overlooking the trees in the garden.  A small cushionless seat rests by
+ the entrance.  The floor is carpeted, and the walls are painted with a 
+paneled dado.  The smell is stronger here.  The room is done in colors 
+that remind you of a candy store and overall has a quaint atmosphere.  
+Among the first things you notice is a draft, but the windows are 
+closed.</p>
+           </div>
+           <div id="id9" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 09</p>
+               <p class="cool">Walking through the invisible wall is 
+incredibly strange, you expect it to feel slimy but it’s like walking 
+through a light snowfall. As soon as you pass through the wall the 
+illusion vanishes, making the doorway obvious.</p>
+           </div>
+           <div id="id10" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 10</p>
+               <p class="cool">You see a L shaped turn ahead. You poke 
+the walls just in case there is another illusion, but you see nothing. 
+You notice that your pockets are heavy, and you find a second key in 
+them. You wonder if it appeared there when you passed the wall. You put 
+it back in your pocket.</p>
+           </div>
+           <div id="id11" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 11</p>
+               <p class="cool">You notice a full fresco on the wall 
+ahead. In painstaking detail someone has painted a sprawling abode with 
+the doors well worn, with chips of colors flake down the edges. The 
+exterior is done in colors that remind you of a gingerbread house.  The 
+yard is tiny and is neatly-trimmed.  It has a large red arrow pointing 
+down near the bottom, and a large re<s>a</s>d 01 over the whole thing. You’re not an art critical, but you think it would look better without the obvious red ink.</p>
+           </div>
+           <div id="id12" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 12</p>
+               <p class="cool">More large windows overlooking a tree in 
+the garden, it’s large leaves obscure anything that may be under it. You
+ remember playing in trees like them growing up when you would visit 
+your grandmother. Those trees are long gone now, leaving nothing but 
+ashes.</p>
+           </div>
+           <div id="id13" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 13</p>
+               <p class="cool">You poke both walls again, but you have a
+ feeling that the traps here don’t obviously repeat. You do question the
+ dusty boxes pilled up in the corner and hope you will not have to move 
+them. They look heavy.</p>
+           </div>
+           <div id="id14" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 14</p>
+               <p class="cool">A large ornate door, with a long ropey 
+pattern with three large keyholes is along the left wall. You know 
+unless you’ve solved all the rooms puzzles, there is no way to get it 
+open. If you have all 3 keys you know you can hang a left here, and 
+begin what you’ve really set out today. Taking a deep breath, you count 
+your items and think about everything you’ve seen.</p>
+           </div>
+           <div id="id15" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 15</p>
+               <p class="cool">As you place each key in the respective 
+keyhole and turn you hear something rocking in the next room. Taking a 
+deep breath before opening the door you walk into the lavender perfumed 
+room. Walking inside you see your Grandmother, rocking away and looking 
+at the instructions for an Ikea<sup>TM</sup> table.<br><br>“Granddaughter!” She exclaims happily “I’m so excited you’re here to help me with the new house.”<br><br>You sigh and explain to your Grandmother that you would have been faster without the puzzles in the way.<br><br>“Now,
+ you’ve always loved those puzzles.” She states “I’m not stopping now.” 
+She gets out of the chair and gives you a hug “Now come give me a hand 
+figuring out this table, my magic is no match for those Swedish wizards.
+ </p>
+           </div>
+           <div id="id16" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 16</p>
+               <p class="cool">Heading south you walk into the garden. 
+Looking up you can see the two large windows overlooking the whole 
+thing. Under the apple tree, on the ground you find a large antique key,
+ holding down some floorplans for the abode. You take a deep breath of 
+the fresh air before heading back towards the abode. </p>
+           </div>
+           <div id="id17" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 17</p>
+               <p class="cool">You’ve taken the key, now all that’s left is the books, kitschy cat curios and book holders on the shelves. </p>
+           </div>
+           <div id="id18" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 18</p>
+               <p class="cool">The large antique key turns in the doors 
+lock. The doors creak open, allowing you into the room ahead. You see a 
+long hallway with a door on the right in the very far end.</p>
+           </div>
+           <div id="id19" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 18-Bee</p>
+               <p class="cool">Nothing here but the big pink-lavender flowers that sway on the hot wind, the pollen scattering as the bees work.???</p>
+           </div>
+           <div id="id20" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Read 20</p>
+               <p class="cool">It's just us and a very angry mouse, who's mousehole-home has vanished.</p>
+           </div>
+           <div id="credits" class="fixpad"></div><div class="textbox">
+               <p class="titlepower">Credits</p>
+               <p class="cool">Internet Janitor - Maker of <a href="https://github.com/JohnEarnest/Octo <view-source:https://github.com/JohnEarnest/Octo>">Octo</a> Try it <a href="http://johnearnest.github.io/Octo/ <view-source:http://johnearnest.github.io/Octo/>">out</a>.<br>
+                <a href="http://www.awfuljams.com/ <view-source:http://www.awfuljams.com/>">Awful Jams</a> and staff.<br>Old dungeon crawlers and cheesy text adventures.<br><a href="http://johnearnest.github.io/Octo/index.html?gist=8e7700ee6b93dbf5166ca24b38f06c3b <view-source:http://johnearnest.github.io/Octo/index.html?gist=8e7700ee6b93dbf5166ca24b38f06c3b>">http://johnearnest.github.io/Octo/index.html?gist=8e7700ee6b93dbf5166ca24b38f06c3b</a> See and play with the code here!<br>And everyone in the Awful-Jams discord and the Jul communities, for putting up with my complaining.</p>
+           </div>
+
+
+      </div>
+  
+
+</div></body></html>
+

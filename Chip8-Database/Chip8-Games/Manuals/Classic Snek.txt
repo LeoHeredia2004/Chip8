@@ -1,0 +1,18 @@
+Classic Snek by Andrew James (2021)
+-----------------------------------
+Chip-8 Game
+
+An basic interpretation
+of the perennial classic, Snake.
+
+This game will likely crash after
+collecting ~128 apples as we run out of
+stack space for the snake data.
+
+
+Controls:
+---------
+2 = Up
+4 = Left
+6 = Right
+8 = Down

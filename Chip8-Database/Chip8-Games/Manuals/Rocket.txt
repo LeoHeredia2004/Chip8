@@ -1,0 +1,23 @@
+
+Rocket - by Joseph Weisbecker (1978)
+------------------------------------
+from Byte Magazine Dec.1978
+
+
+An enemy UFO will be constantly moving from left to right across the top of the screen.
+A single digit score will be displayed at the lower right. A rocket ship will appear at 
+a random horizontal position along the bottom edge of the display area. You can launch
+this rocket by pressing "F" on the hexadecimal keyboard.
+
+The rocket will then move vertically toward the top of the screen. When it reaches the
+top or hits the target UFO it will be erased and a new rocket will appear at the bottom
+of the screen.
+
+After nine rockets have been launched the game ends and no new rockets will appear. If
+you hit the UFO with a rocket the score will incremented by 1.
+
+
+Controls:
+---------
+F = launch rocket
+

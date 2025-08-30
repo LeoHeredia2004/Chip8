@@ -1,0 +1,11 @@
+
+Snake - by Timo Triisa (2014)
+-----------------------------
+Octo-Ber Jam 1
+
+
+Classic Snake game without walls. 
+
+Use 5, 7, 8 and 9 to move. 
+
+Press any key to start over.

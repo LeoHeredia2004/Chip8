@@ -1,0 +1,18 @@
+
+Lady Runner
+===========
+by noodulz (Octojam 7)
+
+
+About:
+------
+A short and simple CHIP-8 and XO-CHIP-supported game consisting of a simple runner. You are a lady knight 
+who has to defeat the incoming enemies to reach the princess and live happily ever after. Get touched by 
+an enemy and you must start over!
+
+
+Controls:
+---------
+Press '6' to attack and to continue the screen. 
+
+New update to come soon to expand the game! 

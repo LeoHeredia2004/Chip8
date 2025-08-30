@@ -1,0 +1,14 @@
+
+Falling - by verisimilitude (2019)
+----------------------------------
+http://verisimilitudes.net/2019-10-30
+
+
+A key symbol will appear in a random position at the top of the screen and begin to 
+descend. Press the corresponding key to stop it and start anew. Failure to do this 
+lets the key hit the bottom and the game then ends.
+
+
+Controls:
+---------
+Press the corresponding key (0 - F)

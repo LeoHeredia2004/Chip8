@@ -1,0 +1,15 @@
+
+Floppy Bird - by Micheal Wales (2014)
+-------------------------------------
+https://github.com/mwales/chip8
+
+
+Inspired by the mobile hit game Flappy Bird, I created a Chip-8 version. 
+It was written in assembly, and then compiled into the ROM format using 
+the CHIPPER assembler.
+
+
+Controls:
+---------
+Press "5" to flap.
+

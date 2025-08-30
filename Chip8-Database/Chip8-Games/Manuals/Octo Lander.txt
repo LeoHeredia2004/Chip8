@@ -1,0 +1,17 @@
+
+Octo Lander
+===========
+by Private Butts (Octojam 7)
+
+
+About:
+------
+A flawed implementation of lunar lander for the chip-8 platform. It contains a single level,  
+and the ship seems to act pretty squirrely under some circumstances.
+
+
+Controls:
+---------
+Use "5/7/8/9" to add thrust to your ship, and the "D" key resets the game. 
+
+Thank you for checking this out!

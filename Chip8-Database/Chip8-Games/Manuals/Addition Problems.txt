@@ -1,0 +1,13 @@
+
+Addition Problems - by Paul C. Moews (1979)
+-------------------------------------------
+from: Programs for the Cosmac Elf Interpreters
+
+
+The following program constructs simple addition problems using two randomly chosen numbers  
+between 0 and 127. On entry to the program a problem is presented, e.g. 076 + 093 = ?. An 
+answer is entered through the keyboard one digit at a time (i.e. 1, 6, 3) and when the last 
+digit is entered 163 is displayed. A "C" flows the entered number if it is correct and an "E"  
+if it is incorrect. In the case of an incorrect answer the correct answer is also shown. 
+Another problem is given when any key is entered.
+

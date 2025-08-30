@@ -1,0 +1,15 @@
+
+infinibr8kr
+===========
+by HailTheFish (octojam  7)
+
+
+About:
+------
+XO-Chip brick-breaker game with a little twist. Move the paddle to hit the ball and break bricks, but as you 
+break bricks, more get added. Don't drop the ball, or let the bricks reach your paddle, or it's game over!
+
+
+Controls:
+---------
+"5" and "7" (or left and right arrow keys) to control the paddle.

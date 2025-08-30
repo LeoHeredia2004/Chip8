@@ -1,0 +1,5 @@
+
+Nonogram by verisimilitude (2019) 
+---------------------------------
+
+Demo. Press from "0" to "9" for fun...

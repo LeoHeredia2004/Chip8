@@ -1,0 +1,15 @@
+It's time to make some coffee!
+
+Controls:
+
+1-4: Move directly to a lane
+
+A/D: Move to left or right lane
+
+W/S: Switch coffee served
+
+E: Serve coffee!
+
+Q: Start game, and reset on a game over
+
+Recommended music: Smooth Jazz.

@@ -1,0 +1,1 @@
+This version does not have the Fx55/Fx65 (load_store_quirk) issue (where score won't increment)

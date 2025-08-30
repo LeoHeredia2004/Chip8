@@ -1,0 +1,9 @@
+A simple lo-fi action game for Super CHIP-8, featuring twice as many edges and angles as Super Square. 
+Move your pixel with A/D or the Left and Right cursor keys, but don't touch the sides!
+About
+
+This game was developed as part of  Octojam 8, using Octo. Its source and assets are all made available 
+under a Creative Commons Zero "No Rights Reserved" license. This game should work on any modern SCHIP 
+interpreter, with one important caveat: it relies upon drawing 16x16 sprites while in 64x32 "low-resolution" 
+display mode; as a consequence it will not work on an HP-48 version of SCHIP.
+

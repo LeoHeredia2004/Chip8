@@ -1,0 +1,13 @@
+
+Into the Garlicscape
+====================
+
+"Come, brave adventurer; don your woolen armor and descend into the GarlicScape in search of aliums. But beware
+many a moth or roach stands in your way! Take solace in the Llamas. They will heal your wounds, and ensure that 
+you have the strength to make it to the fabled Alium Chalice of Yarnham."
+
+
+Controls:
+---------
+Move with ASWD or the arrow keys. Dismiss static dialogs by pressing E or the spacebar. 
+

@@ -1,0 +1,17 @@
+
+Laser Defence - by Kyle Saburao (2019)
+--------------------------------------
+Team CHIPOTLE 
+
+
+Lasers are vastly superior to siege engines.
+
+
+Controls:
+---------
+"5": "TARGETING UP",
+"8": "TARGETING DOWN",
+"9": "TARGETING RIGHT",
+"7": "TARGETING LEFT",
+"6": "LAUNCH BEAM TARGETER",
+"4": "FIRE BEAM EARLY"

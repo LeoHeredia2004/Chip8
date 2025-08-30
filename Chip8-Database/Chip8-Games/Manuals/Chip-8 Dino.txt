@@ -1,0 +1,15 @@
+
+Chip-8 Dino - by Anthony Pham (2019)
+------------------------------------
+version 1.0
+
+Fun and challenging game similar to chrome dino game! (Recommended emulator speed 500Hz).
+
+
+Controls:
+---------
+
+"1" = Jump
+
+
+

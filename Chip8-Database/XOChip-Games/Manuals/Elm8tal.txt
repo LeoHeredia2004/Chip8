@@ -1,0 +1,12 @@
+About
+
+A XO-Chip Chip8 Game powered by Octo.
+Controls
+
+    W/A/S/D - Move Cursor
+    E - Confirm
+    Swipe and Tap should work on Mobile.
+
+Goal
+
+Create the best world possible from the 4 elements.

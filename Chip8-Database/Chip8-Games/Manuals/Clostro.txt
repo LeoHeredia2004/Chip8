@@ -1,0 +1,22 @@
+
+Clostro
+=======
+by jibbl (Octojam 7)
+
+
+About:
+------
+Clostro, a Jezzball clone. Can you make it through all 8 levels and see the ending?
+
+
+Controls:
+---------
+"5/7/8/9" = move the crosshair up/down/left/right
+
+"4" = draw a vertical line
+
+"6" = draw a horizontal line
+
+55887979 = Cheat Code (up, Up, Down, Down, Left, Right, Left, Right)
+
+

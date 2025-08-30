@@ -1,0 +1,7 @@
+Simple Dodge by John Earnest (2021)
+-----------------------------------
+
+An extremely minimalist interpretation of an asteroid-dodging shmup.
+
+Use 4 & 6 for direction (Left/Right).
+Press any key to restart.

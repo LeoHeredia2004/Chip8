@@ -1,0 +1,7 @@
+
+Pong (center-line) - by ??? (unknown author)(19xx)
+--------------------------------------------------
+
+Player 1: 1 to go UP and 4 to go DOWN.
+Player 2: C to go UP and D to go DOWN.
+

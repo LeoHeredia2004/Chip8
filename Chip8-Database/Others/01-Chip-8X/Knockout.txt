@@ -1,0 +1,30 @@
+
+Knockout - by Steve Houk (1980)
+-------------------------------
+Cosmac VIP Game II VP-720 Book - Page 21
+
+
+The object of thei game is to knock out the blocks in the solid wall. 
+There are  1280 blocks in this wall and they are knocked out by firing 
+a ball at the wall. The paddle below is used to rebound the ball to keep 
+it in play longer.
+
+
+How to Play:
+------------
+1. Load the Chip-8X interpreter at 0000 - 02FF and the game starting at
+   0300.
+
+2. Flip the reset-rn switch to run.
+
+3. The paddle can be moved from right to left by pressing the keys 4 and 6.
+   Key 5 fires the ball. Each block is worth 1 point and you are given 20 balls.
+
+
+NOTE: This program will run on an unmodified black and white VIP without color.
+
+      Also, a Simple Sound VP-595 board, if used, will provide different tone
+      beeps with each knockout.
+
+
+

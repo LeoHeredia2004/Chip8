@@ -1,0 +1,15 @@
+
+Enchantment - by verisimilitude (2020) 
+--------------------------------------
+
+As this is a game I've written, it's appropriate to explain its history. The intent in 
+writing this was to create a small core of gameplay which could be expressed concisely, 
+and expanded on later for the next Octo Jam. The player is a lone pixel avoiding diagonal 
+lines being drawn, without any end.
+
+Controls:
+---------
+"2" = Up
+"4" = Left
+"6" = Right
+"8" = Down

@@ -1,0 +1,8 @@
+
+Squash - by David Winter (19xx)
+-------------------------------
+
+Exactely same than WALL, except that you have 5 balls, 
+which are not to be lost...
+
+*NOTE: 1->2 4->6

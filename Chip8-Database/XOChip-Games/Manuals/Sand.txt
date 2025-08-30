@@ -1,0 +1,6 @@
+Invaders from space spoil the sands of our home. We must fight back! Control the mighty sandworm 
+to destroy the invaders!
+
+Steer with a and d.
+
+Based on Mr Worm eats waffles by Scaevolus.

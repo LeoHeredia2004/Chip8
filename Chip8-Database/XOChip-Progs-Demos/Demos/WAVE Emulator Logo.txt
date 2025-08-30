@@ -1,0 +1,4 @@
+I made this for the WAVE Scratch Emulation Project as a default CHIP-8 ROM when you haven't 
+imported any CHIP-8 ROMS yourself.
+
+Scratch Project Link for WAVE v0.6: https://scratch.mit.edu/projects/590231890/

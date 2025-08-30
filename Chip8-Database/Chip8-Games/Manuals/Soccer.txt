@@ -1,0 +1,9 @@
+
+Soccer - by ??? (unknown author)(19xx)
+--------------------------------------
+
+Pong-like. 
+
+1/4 = P1 up/down
+
+C/D = P2 up/down 

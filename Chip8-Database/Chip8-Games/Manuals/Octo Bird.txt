@@ -1,0 +1,10 @@
+
+Octo Bird - by Cody Hoover (2016)
+---------------------------------
+
+Another "Flappy Bird" clone.
+
+
+Controls:
+---------
+Press "5" to flap/restart a new game.
