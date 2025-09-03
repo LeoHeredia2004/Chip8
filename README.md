@@ -1,7 +1,7 @@
 # CHIP8
-## ENGLISH VERSION BELOW
+### ENGLISH VERSION BELOW
 
-# Emulador de Chip-8 em Rust
+## Emulador de Chip-8 em Rust
 Um emulador de Chip-8, Super Chip-8 e XO-CHIP escrito em Rust, utilizando minifb para a criação da janela e renderização, e rodio para a reprodução de áudio. Este projeto foi criado com o objetivo de aprender mais sobre emulação e a linguagem Rust.
 
 O que é o Chip-8?
