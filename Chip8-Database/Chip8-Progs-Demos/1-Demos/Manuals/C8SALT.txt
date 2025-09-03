@@ -1,4 +1,0 @@
-C8SALT - A CHIP-8 emulator written in TI-BASIC for the TI-83+, TI-84+, TI-84+ C Silver Edition, and TI-84+ CE.
-By Oxiti8
-
-VERSION V1.2

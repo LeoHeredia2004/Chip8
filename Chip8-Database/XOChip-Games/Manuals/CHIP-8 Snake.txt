@@ -1,6 +1,0 @@
-A simple XO-CHIP snake game hacked up for the Octojam 8 in a day or two. Heavily inspired by the snake demo 
-for cel7. You can view the source on GitHub as well.
-
-
-To play, use WASD or the arrow keys, and reset a failed game with space or E. Keep munching apples until 
-you find the white one.

@@ -608,7 +608,7 @@ fn main() {
 
     let frame_duration = Duration::from_millis(1000 / TIMER_SPEED_HZ);
 
-    let rom_path = "C:/Users/leohe/OneDrive/Documentos/chip8/chip8_emulator/Chip8-Database/Chip8-Games/Pong (1 player)(unknown author)(19xx).ch8";
+    let rom_path = "C:/Users/leohe/OneDrive/Documentos/chip8/chip8_emulator/Chip8-Database/SuperChip8-Games/Snow Daze (unknown author)(2015).sc8";
 
     match File::open(rom_path){
         Ok(mut file) => {

@@ -1,8 +1,0 @@
-
-X-Mirror - by ??? (unknown author)(19xx)
-----------------------------------------
-
-A Kaleidoscope variant.
-
-
-Draws symmetric patterns using 2/4/6/8.

@@ -1,4 +1,0 @@
-Click upon the game and press a button on your Chip-8 keyboard to hear beeps and bloops.
-
-If you don't have a Chip-8 keyboard then try 1 2 3 4 q w e r a s d f z x c v.
-
