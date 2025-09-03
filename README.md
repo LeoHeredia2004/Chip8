@@ -78,7 +78,7 @@ Emulator will start with the specified ROM.
 O teclado original do Chip-8, com 16 teclas, foi mapeado para o teclado QWERTY da seguinte forma:
 The original Chip-8 keyboard, with 16 keys, mapped to QWERTY the following way:
 
-Chip-8 - QWERTY
+Chip-8 - QWERTY  
 1	- 1  
 2	- 2  
 3	- 3  
