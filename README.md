@@ -79,20 +79,20 @@ O teclado original do Chip-8, com 16 teclas, foi mapeado para o teclado QWERTY d
 The original Chip-8 keyboard, with 16 keys, mapped to QWERTY the following way:
 
 Chip-8 - QWERTY
-1	- 1
-2	- 2
-3	- 3
-C	- 4
-4	- Q
-5	- W
-6	- E
-D	- R
-7	- A
-8	- S
-9	- D
-E	- F
-A	- Z
-0	- X
-B	- C
-F	- V
+1	- 1 
+2	- 2 
+3	- 3 
+C	- 4 
+4	- Q 
+5	- W 
+6	- E 
+D	- R 
+7	- A 
+8	- S 
+9	- D 
+E	- F 
+A	- Z 
+0	- X 
+B	- C 
+F	- V 
 
